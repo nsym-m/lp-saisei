@@ -1,0 +1,883 @@
+@charset "UTF-8";
+
+/* 共通部分
+----------------------------------------------*/
+html{
+	font-size:100%;
+}
+body{
+	font-family:'Kiwi Maru Light','Kiwi Maru Regular', 'Kiwi Maru Medium'/*"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif"*/;
+	line-height:1.7;
+	color:#557968;
+	background-color:#d1c9c0;
+}
+a {
+	text-decoration:none;
+	padding:5px;
+}
+p{
+	color:#746554;
+}
+.pc{
+	display:block !important;
+}
+.sp{
+	display:none !important;
+}
+
+/*---about----------------------------------------------------------------*/
+.about-main{
+	display:flex;
+	margin-bottom: 70px;
+}
+.about-main img{
+	width:280px;
+	height:350px;
+	margin-left: 80px;;
+}
+.about-main p{
+	font-size:1.3rem;
+	color:#746554;
+	line-height:4.2rem;
+	text-align:left;
+	letter-spacing:0.4rem;
+	padding: 80px 0;
+}
+
+/*about h3サブタイトル*/
+.h3{
+	position:relative;
+	height:250px;
+}
+h3{
+	font-size:2rem;
+	color:#746554;
+	line-height:3rem;
+	text-align:center;
+	letter-spacing:0.8rem;
+	padding: 20px;
+}
+h3 span{
+	font-size:1.4rem;
+	color:#557968;
+}
+.h3 img{
+	position:absolute;
+	top:100px;
+	left:305px;
+	width:360px;
+}
+/*messege*/
+.about-messege{
+	display:flex;
+	margin-bottom: 70px;
+}
+.about-messege img{
+	width:300px;
+	height:370px;
+	margin:55px 30px 0 110px;/*
+	float:right;
+	shape-margin:5px;
+	shape-outside:url("../images/bust.png");*/
+}
+.about-messege p{
+	font-size:0.9rem;
+	color:#746554;
+	line-height:2.2rem;
+	text-align:left;
+	letter-spacing:0.2rem;
+	padding: 80px 0;
+	width:480px;
+}
+
+/*point*/
+
+h4{
+	font-size:1.7rem;
+	padding-bottom: 30px;
+	text-align:center;
+}
+h4 span{
+	font-weight:bold;
+	font-family:'Old Standard',cursive;
+	font-weight:900;
+	font-size:4rem;
+	padding: 0 25px 0 0;
+}
+.point1{
+	text-align:left;
+	width:700px;
+	height:330px;
+	margin:40px 0px 40px 155px; 
+	position:relative;
+}
+.point1 p{
+	letter-spacing:0.2rem;
+	line-height:2rem;
+}
+.point1 img{
+	position:absolute;
+	top:120px;
+	left:450px;
+	letter-spacing:0.2rem;
+	line-height:2rem;
+	opacity:0.25;
+}
+.point2{
+	text-align:left;
+	width:720px;
+	height:380px;
+	margin:40px 0px 40px 155px; 
+	position:relative;
+}
+.point2 p{
+	width:700px;
+	letter-spacing:0.2rem;
+	line-height:2rem;
+}
+.point2 img{
+	position:absolute;
+	top:170px;
+	left:450px;
+	letter-spacing:0.2rem;
+	line-height:2rem;
+	opacity:0.25;
+}
+.point3{
+	text-align:left;
+	width:720px;
+	height:400px;
+	margin:40px 0px 40px 155px; 
+	position:relative;
+}
+.point3 p{
+	width:700px;
+	letter-spacing:0.2rem;
+	line-height:2rem;
+}
+.point3 img{
+	position:absolute;
+	width:350px;
+	top:150px;
+	left:360px;
+	letter-spacing:0.2rem;
+	line-height:2rem;
+	opacity:0.25;
+}
+
+
+
+
+/*チャート*/
+.chart{
+	position:relative;
+	text-align:center;
+	width:1000px;
+	margin-bottom: 50px;
+}
+.chart-menu{
+	position:relative;
+	height:600px;
+	top:-60px;
+}
+.chart-menu img{
+	position:absolute;
+	width:850px;
+	top:80px;
+	left:60px;
+}
+.chart-menu iframe{
+	position:absolute;
+	width:550px;
+	height:350px;
+	top:260px;
+	left:230px;
+	border-radius: 5px;
+}
+
+/*できること*/
+.work{
+	position:relative;
+	text-align:center;
+	margin-bottom: 30px;
+}
+.parent img{
+	width:350px;
+	padding:20px 8px;
+}
+.parent a:hover{
+     opacity: .7;
+	}
+
+/*more*/
+.more{
+	position:relative;
+	height:250px;
+}
+.more p{
+	position:absolute;
+	top:0px;
+	left:395px;
+	font-size:1.4rem;
+	color:#746554;
+	letter-spacing:0.6rem;
+}
+.link a{
+	position:absolute;
+	top:100px;
+	left:410px;
+	font-size:1rem;
+	color:#746554;
+	height:auto;
+}
+.link img{
+	position:absolute;
+	top:-6px;
+	right:-195px;
+	width:250px;
+	height:auto;
+}
+.link a:hover{
+     opacity: .7;
+	}
+
+.accese iframe{
+	margin-bottom: 80px;
+	border:70px #557968 solid;
+	border-radius:10px;
+}
+
+
+/*アクセス*//*
+#accses{
+	background-color:rgb(255,251,240);
+	width:1170px;
+	margin:3em auto 3em;
+	padding-bottom:3.5em;
+	text-align:center;
+	border-radius:0 0 2em 2em;
+}
+h4{
+	font-size:2.3rem;
+	letter-spacing:4px;
+	border-bottom:solid 1px #999999;
+	padding:0 0 16px;
+	width:20rem;
+	text-align:center;
+	line-height:45px;
+}
+h4 span{
+	font-size:1.3rem;
+}
+.location{
+	display:flex;
+	justify-content:space-around;
+	margin:4rem 0;
+}
+.location2{
+	text-align:left;
+}
+.location2 p{
+	margin-top:20px;
+	text-align:left;
+	font-size:1.1rem;
+	letter-spacing:2px;
+	line-height:22px;
+}
+iframe{
+	margin:1rem 0;
+	
+}*/
+
+/*FOOTER
+------------------------------------------------------------------*/
+/*.footer{
+	background-color:rgb(255,251,240);
+}
+.footer img{
+	width:250px;
+}
+.footer p{
+	font-size:0.9rem;
+	padding-top:2rem;
+	letter-spacing:0.2rem;
+}
+*/
+/* モバイル版
+----------------------------------------------------------------------------------------------------------------------------------------*/
+@media(max-width : 422px ){
+	
+/*共通
+-------------------------------*/
+.pc{
+	display:none !important;	
+}
+.sp{
+	display:block !important;
+}
+
+h3{
+	font-size:2.2rem;
+	font-weight:bold;
+	margin:2rem 0 1.8rem;
+	letter-spacing:0.7rem;
+}
+
+/* HEADER 600
+---------------------------------*/
+
+.sp_page_header{
+	background-color:rgb(255,251,240);
+	width:100%;
+	height:80px;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:999;
+}
+.sp_top{
+	display:flex;
+	padding:0 20px;
+	align-items:center;
+	justify-content:space-between;
+	height:inherit;
+	position:relative;
+}
+.sp_top p{
+	width:7rem;
+	font-size:1rem;
+	font-weight:bold;
+	padding:0;
+}
+.sp_top img{
+	width:94%;
+	margin:0;
+	padding-top:11px;
+}
+h1{
+	width:110%;
+	padding:0 1%;
+}
+.header_nav{
+	position:absolute;
+	right:0;
+	top:0;
+	width:400px;
+	height:750px;
+	transform:translateX(100%);
+	background-color:rgb(255,251,240);
+	transition:ease 1s;
+	border:solid 2px lightgrey;
+}
+.header_hamburger{
+	width:48px;
+	height:100%;
+}
+.hamburger{
+	background-color:transparent;
+	border-color:transparent;
+	z-index:9999;
+}
+	/*ハンバーガーメニューの線*/
+.hamburger span{
+	width:100%;
+	height:4px;
+	background-color:#D95057;
+	position:relative;
+	transition:ease 1s;
+	display:block;
+}
+.hamburger span:nth-child(1){
+	top:0;
+}
+.hamburger span:nth-child(2){
+	margin:5px 0;
+}
+.hamburger span:nth-child(3){
+	top:0;
+}
+	/*ハンバーガーメニュークリック後のスタイル*/
+.header_nav.active{
+	transform:translateX(0);
+}
+.hamburger.active span:nth-child(1){
+	top:5px;
+	transform:rotate(45deg);
+}
+.hamburger.active span:nth-child(2){
+	opacity:0;
+}
+.hamburger.active span:nth-child(3){
+	top:-13px;
+	transform:rotate(-45deg);
+}
+	
+.nav_items{
+	padding:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:300px;
+	transform:translate(-50%,-50%);	
+	display:block;
+}
+	/*ナビのリンク*/
+.nav_items_item a{
+	color:#130F0F;
+	width:100%;
+	display:block;
+	text-align:center;
+	font-size:20px;
+	margin-bottom:24px;
+}
+.nav_items_item:last-child a{
+	margin-bottom:0;
+}
+.nav_items_item:first-child img{
+	width:280px;
+}
+.nav_items_item:last-child img{
+	width:280px;
+}
+.nav_items_item {
+	border-bottom:1px solid lightgrey;
+	padding:10px 0 0;
+	height:55px;
+}
+.nav_items_item:first-child {
+	border-bottom:2px solid #3489B4;
+	padding:0 0 75px 30px;
+}
+.nav_items_item:last-child {
+	border-bottom:none;
+	padding-top:30px;
+}
+.nav_items_item  span{
+	color:grey;
+}
+.nav_items_item:last-child  span{
+	color:#3489B4;
+	font-size:0.8rem;
+	font-weight:bold;
+	letter-spacing:1px;
+	
+}
+
+	
+	
+.page-header{
+	display:flex;
+	justify-content:space-between;
+	background-color:#FFFCF5;
+}
+
+.wrapper{
+	width:100%;
+	margin:0 0;
+	padding:4px 2%;
+	disolay:flex;
+	justify-content:space-between;
+}
+
+	
+
+
+/* HOME 600
+---------------------------------------------*/
+
+	
+.home-content{
+	text-align:left;
+	margin-bottom:6rem;
+	padding:7rem 2rem 0;
+	color:whitesmoke;
+	text-shadow:3px 3px 3px #555;
+	font-size:1.7rem;
+	width:600px;
+}
+.home-content p{
+	font-size:1.2rem;
+	font-weight:bold;
+	letter-spacing:0.1em;
+	width:500px;
+	padding-top:10px;
+}
+.home-content a{
+	padding:0 0 1rem 0;
+	display:flex;
+	justify-content:flex-end;
+}
+.home-content img{
+	width:130px;
+	height:130px;
+}
+.flag{
+	display:flex;
+	justify-content:space-between;
+	margin-top:0px;
+}
+.flag img{
+	height:90px;
+}
+/*大きな背景画像*/
+.big-bg{
+	background-size:cover;
+	background-position:center top;
+	background-repeat:no-repeat;
+/*	background-image:url("../images/iw19c_2974.JPG");*/
+	width:600px;
+}
+/*見出し*/
+.page-title{
+	font-size:2.3rem;
+	font-weight:bold;
+	letter-spacing:0.1em;
+	width:350px;
+}
+
+
+
+/* TOPPAGE 600
+----------------------------------------------------------------------*/
+.toppage{
+	color:#130F0F;
+	font-size:1rem;
+	
+}
+
+/*新着情報*/
+.newinfo{
+	width:500px;
+	margin:60px 50px 70px;
+}
+.newinfo table{
+	width:430px;
+	letter-spacing:1.5px;
+}
+
+.newinfo th{
+	font-size:2rem;
+}
+.newinfo th  img{
+	width:65px;
+}
+.newinfo td{
+	padding:2rem;
+	font-size:1.4rem;
+}
+.newinfo td span{
+	font-weight:bold;
+}
+
+.btn-more p{
+	margin-top:20px;
+}
+.btn-more ::before{
+	height:30px;
+	width:150px;
+}
+
+.close ::before{
+	height:30px;
+	width:110px;
+}
+.dropdown ul li{
+	list-style:none;
+}
+
+	
+/*当園について*/
+.introduction{
+	width:500px;
+	padding-bottom:3em; 
+	margin:5rem 50px;
+}
+.introduction img{
+	width:500px;
+	vertical-align:top;
+}
+.introduction2{
+	font-size:1.4rem;
+	letter-spacing:0.1rem;
+	padding-top:2rem;
+	line-height:3.5rem;
+	margin-bottom:7rem;
+}
+
+.sp_shikaku{
+	background-color:#fff;
+	width:430px;
+	margin:3em auto 3em;
+	padding-bottom:3.5em;
+	text-align:center;
+	border-radius:3em;
+	box-shadow:5px 5px 20px lightgrey;
+	text-align:center;
+}	
+.sp_shikaku_ue{
+	display:flex;
+	justify-content:space-around;
+	border-bottom:solid 0.5px lightgrey;
+	width:380px;
+	margin:0 auto;
+}
+.sp_shikaku p span{
+	font-size:2.7rem;
+	font-weight:bold;
+	letter-spacing:4px;
+	writing-mode:vertical-rl;
+	padding:20px 0px 0 70px;
+	height:15rem;
+	text-align:center;
+}
+.asobu img{
+	width:300px;
+	padding:50px;
+}	
+.manabu img{
+	width:280px;
+	height:270px;
+	padding:60px 30px 55px 40px ;
+}	
+.sodatsu img{
+	width:270px;
+	height:240px;
+	padding:60px 40px 40px 50px;
+}	
+.sp_shikaku p{
+	font-size:1.5rem;
+	letter-spacing:2px;
+	width:360px;
+	padding:1rem 0 0 0.7rem;
+	margin:0 auto;
+	text-align:left;
+}
+	
+	
+/*１日の流れ*/
+.daily{
+	width:500px;
+	padding-bottom:3em;
+	margin:5rem 50px;
+}
+.daily img{
+	width:500px;
+	vertical-align:top;
+}
+.sp_times p{
+	width:370px;
+	text-align:left;
+	margin:15px 0 70px 90px;
+	font-size:1.4rem;
+}
+.sp_0830 img{
+	width:430px;	
+}
+.sp_1130 img{
+	width:500px;	
+}
+.sp_1300 img{
+	width:530px;	
+}
+.sp_1500 img{
+	width:530px;	
+}
+
+
+/*年間行事*/
+#nenkan{
+	width:500px;
+	padding-bottom:3em;
+	margin:5rem 50px;
+}
+#nenkan img{
+	width:500px;
+	vertical-align:top;
+}
+.sp_container p{
+	padding-top:30px;
+	font-size:1.2rem;
+}
+
+/*特別授業*/
+#tokubetsu{
+	width:500px;
+	padding-bottom:3em;
+	text-align:center;
+	margin:5rem 50px;
+}
+#tokubetsu img{
+	width:500px;
+	vertical-align:top;
+}
+.sp_tokubetsu{
+	width:470px;
+	text-align:left;
+	padding:0 0 0 43px ;
+}
+.sp_tokubetsu b{
+	color:#130F0F;
+	font-size:1.7rem;
+	font-weight:bold;
+	letter-spacing:4px;
+	text-align:left;
+	padding-top:1rem;
+}
+.sp_tokubetsu span{
+	color:#3489B4;
+	font-size:1.4rem;
+	letter-spacing:1.5px;
+}
+.sp_tokubetsu p{
+	font-size:1.4rem;
+	margin:15px 0 70px 0;
+	width:400px;
+}
+#tokubetsu .sp_tokubetsu img{
+	width:420px;
+}
+.sp_kome{
+	width:500px;
+}
+
+/*施設紹介*/
+#shisetsu{
+	width:500px;
+	padding-bottom:3em;
+	margin:5rem 50px;
+}
+#shisetsu img{
+	width:500px;
+	vertical-align:top;
+}
+#shisetsu .sp_shisetsu img{
+	width:450px;
+	margin-top:30px;
+}
+.sp_shisetsu p{
+	width:500px;
+	font-size:1.3rem;
+	padding:15px 0 50px 30px;
+	vertical-align:baseline;
+	text-align:left;
+}
+
+/*入園案内*/
+#nyuen{
+	width:500px;
+	padding-bottom:3em;
+	text-align:center;
+	margin:5rem 50px;
+}
+#nyuen img{
+	width:500px;
+	vertical-align:top;
+}
+
+
+.grid{
+	display:grid;
+	gap:26px;
+	grid-template-columns:450px;
+	grid-template-rows:31rem 35rem 19rem 17rem 17rem 18rem 29rem; 
+	margin-top:6%;
+	margin:5rem 0 50px;
+	
+}
+.item{
+	text-align:center;
+}
+.item h4{
+	font-size:1.8rem;
+}
+.item p{
+	font-size:1.4rem;
+	
+}
+.item p span{
+	font-weight:bold;
+	font-size:1.4rem;
+}
+.item .kome{
+	font-size:1.25rem;
+	width:460px;
+}
+.item table{
+	margin-left:30px;
+}
+#nyuen .bike img{
+	width:450px;
+	margin:3rem 0 0 30px;
+}
+#nyuen .fuki img{
+	width:400px;
+	margin-left:0;
+}
+#nyuen .toiawase a img{
+	width:450px;
+	margin:3rem 0 3rem 20px;
+}
+.toiawase{
+	display:block;
+	
+}
+
+
+	
+/*アクセス*/
+#accses{
+	width:500px;
+	padding-bottom:3em;
+	margin:5rem 50px;
+}
+#accses img{
+	width:500px;
+	vertical-align:top;
+}
+}
+.sp_location h4{
+	padding-left:100px;
+	width:400px;
+	border-bottom:none;
+	font-size:2rem;
+}
+.sp_location h4 span{
+	font-size:1.2rem;
+}
+.sp_location{
+	display:block;
+}
+.sp_location p{
+	margin:20px 0 20px 50px;
+	text-align:left;
+	font-size:1.1rem;
+	letter-spacing:2px;
+	line-height:22px;
+}
+iframe{
+	margin:0;
+	
+}
+
+/*FOOTER 600
+------------------------------------------------------------------*/
+.footer{
+	padding:0;
+	margin:3rem auto 0;
+	width:600px;
+}
+.footer img{
+	width:250px;
+	padding-top:20px;
+
+}
+.footer p{
+	font-size:0.5rem;
+	padding-top:2.5rem;
+	letter-spacing:0.2rem;
+	width:250px;
+}
+	
+	
+} /* /@media(max-width:600px) ---------------------------------------------------------------------------*/

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>濱田貴之税理士事務所</title>
+		<meta name="discription" content="国登録文化財・次郎長生家の隣にある静岡市の税理士事務所です">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/toppage.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/about.css">
+		<link rel="icon" href="images/fav.svg">
+		<!--NotoSans-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+		<!--KiwiMaru-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+		<!--OldStandardTT-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+		
+		
+	<!--jQuery CDN -->
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		
+	<!-- OGP -->
+		<meta property="og:title" content="濱田貴之税理士事務所" />
+		<meta property="og:url" content="https://hamada-kaikei.com" />
+		<meta property="og:image" content="https://hamada-kaikei.com/images/nigaoe.png" />
+		<meta property="og:description" content="国登録文化財・次郎長生家の隣にある静岡市の税理士事務所です" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="濱田貴之税理士事務所" />
+	
+	</head>
+	
+	<body>
+		<header class="page_header wrapper" id="header">
+      <div class="green">
+        
+        <button class="header_hamburger hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav pc">
+          <nav>
+            <ul class="main-nav">
+              <div class="nav-in">
+              <li><img class="nav-bean" src="images/shiromame.png"><a href="#touen">私たちについて</a></li><!--#は未変更 -->
+              <li><img class="nav-bean" src="images/shiromame.png"><a href="#daily">相談チャート</a></li>
+              <li><img class="nav-bean" src="images/shiromame.png"><a href="#tokubetsu">できること</a></li>
+              <li><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">料金表</a></li>
+              <li><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">アクセス</a></li>
+              </div>
+            </ul>
+          </nav>
+        </div><!-- /.pc nav -->
+
+        <div class="logos pc">
+          <a href="#">
+            <img class="logo" src="images/logo-shiro.svg" alt="濱田貴之税理士事務所">
+          </a>
+          <div>
+            <div class="inquiries">
+              <!-- LINEのリンク（li.me みたいなやつがあった気がするのでたぶんそれ） -->
+              <a href="#" class="button">
+                <img src="images/line.svg" alt="a">
+                <span>LINEでお問合わせ</span>
+              </a>
+              <!-- TODO: メールアドレス -->
+              <a href="mailto:メールアドレス" class="button">
+                <img src="images/mail.svg" alt="a">
+                <span>メールでお問合わせ</span>
+              </a> 
+            </div>
+          </div>
+        </div><!-- /.pc logos -->
+
+        
+
+        <div class="sp_page_header sp">
+            <a href="#">
+              <img class="logo" src="images/logo-shiro.svg" alt="濱田貴之税理士事務所">
+            </a>
+            <div class="inquiries"> -->
+              <!-- TODO: LINEのリンク（li.me みたいなやつがラインで使える気がするのでたぶんそれ） -->
+              <a href="#" class="button">
+                <img src="images/line.svg" alt="a">
+                <span>LINEでお問合わせ</span>
+              </a>
+              <!-- TODO: メールアドレス -->
+              <a href="mailto:メールアドレス" class="button">
+                <img src="images/mail.svg" alt="a">
+                <span>メールでお問合わせ</span>
+              </a>
+            </div>
+          </div>
+          
+        </div><!-- /.sp_top -->
+        <div class="moko"></div>
+
+			</div><!-- /.green  -->
+
+		</header><!-- /.page-header .wrapper  -->
+
+    <div class="bodycontent" id="home">
+
+      <!-- 以下スマホサイズの時に横に追従するメニュー（css調整終わってない） -->
+      <div>
+        <aside class="side" id="side">
+          <div class="menu">line</div>
+          <div class="menu">mail</div>
+          <div class="menu">chart</div>
+        </aside>
+      </div>
+      <!-- スマホサイズの時に横に追従するメニューここまで -->
+
+	    <img class="tori" src="images/tori.svg">
+
+      <div class="toppage">
+
+        <div class="home-content">
+          
+          <h2 class="page-title"><img src="images/about.svg" alt="濱田貴之税理士事務所"></h2>
+          <!-- 
+          <div class="main">
+            <div class="div7"></div>
+            <div class="div1"><img src="images/lamp.svg" class="lamp"> </div>
+            <div class="div2"><img src="images/hama.png"> </div>
+            <div class="div3"><p ><span>いつでも、なんでも　<br>聞いてください</span></p><br><br></div>
+            <div class="div4"><p>こんなことで質問していいのかな？<br>知識が無さ過ぎて怒られないかな？<br>そんな不安は要りません！<br>あなたの味方になる、税理士事務所です。</p> </div>
+            <div class="div5"><img src="images/table.png"></div>
+            <div class="div6"><img src="images/chair.gif"></div> 
+          </div>/.main -->
+			
+			<div class="about-main">
+				<img src="images/drip.png">
+				<p>専門知識があり、頼れる税理士事務所を<br>
+				　　目指すことは当然のことながら<br>
+					気兼ねなくお茶を飲みに来る感覚で来所<br>
+					いただける場所、そんな税理士事務所です。</p>
+			</div>
+
+        </div><!-- class="home-content"-->
+
+
+        <div id="messege" class="messege">
+		 <div class="h3">
+			<h3>代表メッセージ<br><span>messege</span></h3>
+			<img src="images/h3-2.svg">
+		 </div><!-- .h3-->
+			
+		 <div class="about-messege">
+				<img src="images/bust.png">
+				<p>税金は、どのような方でも関わりのあるものだと思います。<br>多くの方が感じていらっしゃるであろう、<br>
+					税金に対する難解さ・複雑さ・納める金額への不安、<br>
+					このような心配・不安から皆さんを解放してあげることを<br>
+					全力でできることをモットーにしております。<br>
+					もちろん、会計税務の専門家として経営改善や<br>
+					節税対策アドバイス、税務調査への対応、補助金申請への<br>
+					手続き等と、安心してご依頼できる体制を整えております。<br>
+					スタッフ一同、お客様へ真摯に対応させていただきます。
+				</p>
+		</div><!-- .about-messege-->
+	  </div><!-- #.messege-->
+			
+	  <div id="point" class="point">
+		 <div class="h3">
+			<h3>３つのポイント<br><span>point</span></h3>
+			<img src="images/h3-2.svg">
+		 </div><!-- .h3-->
+		  
+		  <div class="point1">
+		  		<h4><span>1</span>初期投資の掛かる会計財務ソフトは導入不要！</h4>
+		  		<p>通常は、各税理士事務所で指定の会計財務ソフトが存在します。<br>
+				   このソフトをお客様に導入(購入・賃借)いただくことが前提となる税理士事務所もございますが、当事務所では必要ありません。<br>
+				   もちろん、既に導入済みの場合でもそのままお持ちのソフトをお使いいただけます。だから、月々の費用も抑えることが可能です。</p>
+		  		<img src="images/cupcoffe.png">
+		  	
+		  </div><!-- .point1-->
+		   <div class="point2">
+		  		<h4><span>2</span>経営支援、特にコスト面の改善・分析等に自信あり！</h4>
+		  		<p>一般事業会社に勤務していた際に培った原価分析のノウハウを活かし、<br>
+				   改善すべき箇所や弱点を指摘。経営改善への大きな一歩のお手伝いいたします！<br>
+				   売上げアップは大事な要素ですが、第三者(買い手)の存在があります。<br>
+				   一方、経費削減や集中投資は自社の努力が直ぐに数値に現れる分野です。<br>
+				   とはいえ、過剰な経費削減等は会社の生産性を阻害する原因にもなります。<br>
+              	   このバランスを大切にして、皆さんと一緒に考えていきます。<br>
+				   その他、投資の意思決定等(購入か賃借か)のアドバイスもいたします。</p>
+		  		<img src="images/kettle.svg">
+		  	
+		  </div><!-- .point2-->
+		   <div class="point3">
+		  		<h4><span>3</span>気になることをすぐに聞けちゃう気軽さがあります！</h4>
+		  		<p>税理士に質問したいけど、こんなことで電話やメールをしても良いんだろうか？<br>
+				   と思っている方が一定数いらっしゃると聞いております。<br>
+				   税理士はあなたのビジネスパートナーであり、チームの一員です。<br>
+				   その疑問や不安を私と共有し、一緒に解決していきませんか？<br>
+				   電話だと緊張するので…という方はメールやLINEでも質問できますので<br>ご安心ください。<br>
+				   デジタル機器は苦手という方も、直接のご訪問やFAXでも承ります！
+
+				</p>
+		  		<img src="images/point3.png">
+		  </div><!-- .point3-->
+	  </div><!-- #.pointe-->
+
+          
+		
+		<div id="work">
+			 <div class="h3">
+				<h3><span>work</span><br>できること</h3>
+				<img src="images/h3-2.svg">
+		 	</div>
+			<div class="work pc">
+				<div class="parent">
+					<a href="#kojin"><img src="images/kojin.png"></a>
+					<a href="#kojin"><img src="images/hojin.png"></a>
+					<a href="#kojin"><img src="images/sozoku.png"></a>
+					<a href="#kojin"><img src="images/sonota.png"></a>
+				</div>
+			</div><!-- /.work .pc  -->
+			
+			<div class="sp_work sp"> 
+				<div class="parent">
+					<a href="#kojin"><img src="images/kojin.png"></a>
+					<a href="#kojin"><img src="images/hojin.png"></a>
+					<a href="#kojin"><img src="images/sozoku.png"></a>
+					<a href="#kojin"><img src="images/sonota.png"></a>
+				</div>
+			</div><!-- /.sp_work .sp  -->
+			
+			 
+			
+		</div><!-- /#work-->
+		  　<div class="jirocho">
+				<div class="jiro1"><img src="images/window.png"></div>
+				<div class="jiro2"><p>国登録文化財・次郎長生家の隣にある静岡市の税理士事務所です。<br>どんな些細なことでも気軽にお問合せください</p></div>
+				<div class="jiro3"><img src="images/fuki.png"></div>
+				<div class="jiro4"><img src="images/plant.png"></div>
+			</div>
+		
+			
+		</div><!-- /.toppage -->
+	
+	
+		<footer id="footer">
+			<div class="moko2"><img src="images/green4.svg"></div>
+			<div class="green">
+				<div class="footer-top">
+					<div class="share">
+						<div class="s1"><p>Contact</p></div>
+						<div class="s2"><p>▷</p></div>
+						<div class="s3"><a href="tel:054-355-5107"><span>054-355-5107</span></a></div>
+						<div class="s4"><p>Follow me</p></div>
+						<div class="s5"><p>▷</p></div>
+						<div class="s6"><a href="#"><img src="images/instagram.svg"></a><a href="#"><img src="images/line2.png"></a></div>
+						<div class="s7"><p>Share</p></div>
+						<div class="s8"><p>▷</p></div>
+						<div class="s9"><a href="#"><img src="images/twitter.svg"></a><a href="#"><img src="images/facebook.png"></a></div>
+					</div><!-- /.share-->
+					<div class="jigyo">
+						<img src="images/kusa.svg">
+						<p>
+							<span>事業内容</span><br>
+							経理処理サポート<br>
+							各種税金申告業務<br>
+							補助金申請作業補助<br>
+							事業計画作成等(各種相談)<br>
+						</p>
+						<img src="images/kusa.svg">
+					</div><!-- /.jigyo-->
+				</div><!-- /.footer-top-->
+				
+				<div class="footer-bottom">
+					<div class="map">
+						<img src="images/map.svg">
+						<p>〒424-0945 静岡県静岡市清水区美濃輪町４−１５−２</p>
+					</div><!-- /.map-->
+					<div class="kanban"><img src="images/kanban.svg"></div>
+				</div><!-- /.footer-bottom-->
+				
+				<div class="copy"><p>Copyright<small>&copy;</small>Hamada Takayuki Tax Accountant Office. All Rights Reserved.</p></div>
+			
+			</div><!-- /.green-->
+		
+		</footer>
+
+
+      
+
+	  </div><!-- /.bodycontent  -->	
+			
+	</body>
+
+  <script>
+
+    // --- 以下ハンバーガーメニューの開け閉め
+    const ham=$('#js-hamburger');
+    const nav=$('#js-nav');
+    ham.on('click',function(){
+      ham.toggleClass('active');
+      nav.toggleClass('active');
+    });
+
+
+    // --- 以下ヘッダーが途中で変わる処理（使う時にcssと一緒にコメントアウト外す。調整は必要）
+    // 参考サイト：https://takblog.site/web/?p=1453
+
+    // const headerH = $("#header").outerHeight(true);//headerの高さを取得    
+
+    // //スクロール途中からヘッダーの高さを変化させるための設定を関数でまとめる
+    // function FixedAnime() {
+    //   //ヘッダーの高さを取得
+    //   const scroll = $(window).scrollTop();
+    //   if (scroll >= headerH){//ヘッダーの高さを超えたら
+    //     $('#header').addClass('HeightMin');//#headerについているHeightMinというクラス名を付与
+    //   } else {
+    //     $('#header').removeClass('HeightMin');//HeightMinというクラス名を除去
+    //   }    
+    // }
+
+    // // 画面をスクロールをしたら動かしたい場合の記述
+    // $(window).scroll(function () {
+    //   FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
+    // });
+
+    // // ページが読み込まれたらすぐに動かしたい場合の記述
+    // $(window).on('load', function () {
+    //   FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
+    // });
+
+    // //リンク先のidまでスムーススクロール
+    // //※ページ内リンクを行わない場合は不必要なので削除してください
+    // $('#g-navi li a').click(function () {
+    //   const headerVal = $("#header").outerHeight(true);	//現在のheaderの高さを取得    
+
+    //   //ヘッダーが高さの状態を取得してスクロールする範囲を調整する
+    //   const scroll = $(window).scrollTop();	//スクロール
+    //   const adjust = 0						//調整の変数
+    //   if(scroll <= headerVal ){			//スクロールとヘッダーの高さを取得
+    //     adjust = 70;					//スクロール値がヘッダーの高さ以内であれば調整変数に70を入れる
+    //   }
+      
+    //   const elmHash = $(this).attr('href'); //hrefを取得
+    //   const pos = $(elmHash).offset().top-headerVal-adjust;	//クリックしたheader分の高さと調整分を引いた高さまでスクロール
+      
+    //   $('body,html').animate({scrollTop: pos}, 1000);
+    //   return false;
+    // });
+
+    // --- ヘッダーが途中で変わる処理ここまで
+  </script>
+</html>

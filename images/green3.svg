@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.64 47.34">
+<svg id="_レイヤー_1" data-name=" レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.6 78.2">
   <defs>
     <style>
       .cls-1 {
-        fill: #547766;
+        fill: #557968;
       }
     </style>
   </defs>
-  <path class="cls-1" d="M144.64,0c0,26.15-32.38,47.34-72.32,47.34S0,26.15,0,0"/>
+  <path class="cls-1" d="M0,0V34.1H.2c2.6,24.6,33.9,44.1,72.1,44.1s69.5-19.4,72.1-44.1h.2V0H0Z"/>
 </svg>

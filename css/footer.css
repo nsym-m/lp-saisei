@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+
+/*
+
+@media (max-width: 970px) {
+	/* .nav {
+		display: none;
+	}
+	.main-nav {
+		display: none;
+	}
+	.nav-bean{
+		display: none;
+	} */
+/*}*/
+
+
+/* タブレットサイズ *//*
+@media (max-width: 800px) {
+	.nav {
+        border-left: unset;
+		display: none;
+	}
+	.main-nav {
+		display: none;
+	}
+	.nav-bean {
+		display: none;
+	}
+    .green {
+        background-color:#557968;
+        display: block;
+    }
+    .logos{
+        margin-right: 0;
+        text-align:center;
+    }
+}
+*/
+
+
+
+/*次郎長*/
+.jirocho{
+	margin-top: 260px;
+	position:relative;
+	clip-path: inset(5% 8.3% 15% 8.3%);
+	background-color:#f0edea;
+	margin: 0 auto;
+	width:1000px;
+	height:400px;
+}
+.jiro1 img{
+	position:absolute;
+	top:10px;
+	left:90px;
+	width:270px;
+}
+.jiro2{
+	position:absolute;
+	top:50px;
+	left:400px;
+	font-size:0.9rem;
+}
+.jiro3 img{
+	position:absolute;
+	top:40px;
+	left:370px;
+	width:450px;
+}
+.jiro4 img{
+	position:absolute;
+	top:150px;
+	left:770px;
+	width:150px;
+	transform:rotate(10deg);
+}
+
+
+
+
+/*mokomoko*/
+.moko2{
+	height:70px;
+	width:100vw;
+	background-image: url("../images/green4.svg");
+	background-repeat:repeat-x;
+	margin-top: 70px;
+}
+.moko2 img{
+	height:70px;
+}
+
+.green{
+	background-color:#557968;
+	color:#f0edea;
+	width:100vw;
+	flex-wrap:wrap;
+}
+.footer-top{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	vertical-align: center;
+	margin: 100px 0 0 0px;
+	width:100vw;
+	
+}
+.share {
+	display: grid;
+	grid-template-columns:100px 50px 400px;
+	grid-template-rows: repeat(3, 60px);
+	grid-column-gap: 0px;
+	grid-row-gap: 20px;
+	text-align:left;
+	position:relative;
+	margin:40px 0 40px 110px;
+}
+.share p{
+	color:#F0EDEA;
+	vertical-align: bottom;
+}
+.share img{
+	width:35px;
+	margin: 0 10px;
+}
+.share a{
+	color:#F0EDEA;
+	font-size:1.7rem;
+	letter-spacing:0.4rem;
+	vertical-align: top;
+}
+.share a:hover{
+     opacity: .7;
+	}
+.share span{
+	position:absolute;
+	top:-8px;
+	left:157px;
+}
+.jigyo p{
+	color:#F0EDEA;
+	font-size:1.1rem;
+	letter-spacing:0.4rem;
+	margin: 20px 0 30px;
+	font-weight:100;
+	text-align:center;
+}
+.jigyo span{
+	font-size:1.4rem;
+	letter-spacing:0.4rem;
+	padding: 10px 0;
+}
+.jigyo img{
+	width:400px;
+}
+
+.footer-bottom{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	flex-direction: row-reverse;
+	vertical-align: center;
+	margin: 100px 0 80px 0px;
+	width:100vw;
+}
+.map img{
+	width:450px;
+}
+.map p{
+	color:#F0EDEA;
+	letter-spacing:0.1rem;
+	margin-top: 10px;
+}
+.kanban img{
+	width:600px;
+	margin:100px 20px 0 0;
+}
+.copy{
+   	text-align:center;
+	margin: 0 auto 15px ;
+	width:100vw;
+}
+.copy p{
+	color:#F0EDEA;
+   	text-align:center;
+    font-size:0.8rem;
+	letter-spacing:0.1rem;
+	margin: 0 auto 30px ;
+}

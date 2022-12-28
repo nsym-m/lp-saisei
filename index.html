@@ -4,14 +4,18 @@
 		<meta charset="utf-8">
 		<title>濱田貴之税理士事務所</title>
 		<meta name="discription" content="国登録文化財・次郎長生家の隣にある静岡市の税理士事務所です">
-		<meta name="viewport" content="width=device-width, initial-scale=1"><!---->
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!--CSS -->
+
 		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/toppage.css">
+		<link rel="stylesheet" href="css/footer.css">
 		<link rel="icon" href="images/fav.svg">
 		<!--NotoSans-->
-		<link rel="preconnect" href="https://fonts.gstatic.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
 		<!--KiwiMaru-->
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,595 +30,276 @@
 		<meta property="og:title" content="濱田貴之税理士事務所" />
 		<meta property="og:url" content="https://hamada-kaikei.com" />
 		<meta property="og:image" content="https://hamada-kaikei.com/images/nigaoe.png" />
-		<meta property="og:description" content="国登録文化財・次郎長生家の隣にある静岡市の税理士事務所です" />    
+		<meta property="og:description" content="国登録文化財・次郎長生家の隣にある静岡市の税理士事務所です" />
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="濱田貴之税理士事務所" />
 	
 	</head>
 	
 	<body>
-		<header class="page_header wrapper">
-			<div class="green">
-			
-			<div class="pc nav">
-			<nav>
-				<ul class="main-nav">
-					<div class="nav-in">
-					<li><img class="nav-bean" src="images/shiromame.png"><a href="#touen">私たちについて</a></li><!--#は未変更 -->
-					<li><img class="nav-bean" src="images/shiromame.png"><a href="#daily">相談チャート</a></li>
-					<li><img class="nav-bean" src="images/shiromame.png"><a href="#tokubetsu">できること</a></li>
-					<li><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">料金表</a></li>
-					<li><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">アクセス</a></li>
-					</div>
-					
-				</ul>	
-			</nav>
-			</div><!-- /.pc nav -->
-				
-			<div class="pc logos">
-				<h1><a href="index.html"><img class="logo" src="images/logo-shiro.svg" alt="濱田貴之税理士事務所"></a></h1>
-				<div>
-				      <a href="https://hamada-kaikei.com" class="button"><img src="images/line.svg" alt="a">LINEでお問合わせ</a> 
-					  <a href="https://hamada-kaikei.com" class="button"><img src="images/mail.svg" alt="a">メールでお問合わせ</a> 
-                </div>
-			</div><!-- /.pc logos -->
-				
+		<header class="page_header wrapper" id="header">
+      <div class="green">
+        
+        <button class="header_hamburger hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-		<div class="sp_page_header sp"><!-- -->
-				<div class="sp_top">
-				  <p> 学校法人<br>
-				    藤井学園 </p>
-				  <h1><a href="index.html"><img class="logo" src="images/logo_sp.png" alt="岩塚第一幼稚園"></a></h1>
-				<nav id="js-nav" class="header_nav nav">
-				<ul class="main-nav nav_items nav-items">
-					<li class="nav_items_item"><a href="index.html"><img src="images/logo5.png"></a></li>
-					<li class="nav_items_item"><a href="#touen">当園について　　　　<span>＞</span></a></li>
-					<li class="nav_items_item"><a href="#daily">１日の流れ　　　　　<span>＞</span></a></li>
-					<li class="nav_items_item"><a href="#nenkan">年間行事　　　　　　<span>＞</span></a></li>
-					<li class="nav_items_item"><a href="#tokubetsu">特別授業　　　　　　<span>＞</span></a></li>
-					<li class="nav_items_item"><a href="#shisetsu">施設紹介　　　　　　<span>＞</span></a></li>
-					<li class="nav_items_item"><a href="#nyuen">入園案内　　　　　　<span>＞</span></a></li>
-					<li class="nav_items_item"><a href="#accses">アクセス　　　　　　<span>＞</span></a></li>
-					<li class="nav_items_item"><a href="tel:052-412-5555"><span>お問い合わせはこちらから</span><br><img src="images/tel.png"></a></li>
-				</ul>	
-			</nav>
-			<button class="header_hamburger hamburger" id="js-hamburger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-			</div><!-- /.sp_top -->
-			
-		</div><!-- /.sp_page_header .sp -->
-			
-			<!-- jQuery -->
-			<script>
-				const ham=$('#js-hamburger');
-				const nav=$('#js-nav');
-				ham.on('click',function(){
-					ham.toggleClass('active');
-					nav.toggleClass('active');
-				});
-			</script>
-				
+        <div class="nav pc">
+          <nav>
+            <ul class="main-nav">
+              <div class="nav-in">
+              <li><img class="nav-bean" src="images/shiromame.png"><a href="#touen">私たちについて</a></li><!--#は未変更 -->
+              <li><img class="nav-bean" src="images/shiromame.png"><a href="#daily">相談チャート</a></li>
+              <li><img class="nav-bean" src="images/shiromame.png"><a href="#tokubetsu">できること</a></li>
+              <li><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">料金表</a></li>
+              <li><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">アクセス</a></li>
+              </div>
+            </ul>
+          </nav>
+        </div><!-- /.pc nav -->
+
+        <div class="logos pc">
+          <a href="#">
+            <img class="logo" src="images/logo-shiro.svg" alt="濱田貴之税理士事務所">
+          </a>
+          <div>
+            <div class="inquiries">
+              <!-- LINEのリンク（li.me みたいなやつがあった気がするのでたぶんそれ） -->
+              <a href="#" class="button">
+                <img src="images/line.svg" alt="a">
+                <span>LINEでお問合わせ</span>
+              </a>
+              <!-- TODO: メールアドレス -->
+              <a href="mailto:メールアドレス" class="button">
+                <img src="images/mail.svg" alt="a">
+                <span>メールでお問合わせ</span>
+              </a> 
+            </div>
+          </div>
+        </div><!-- /.pc logos -->
+
+        
+
+        <div class="sp_page_header sp">
+          <a href="#">
+            <img class="logo" src="images/logo-shiro.svg" alt="濱田貴之税理士事務所">
+          </a>
+          <div class="inquiries"> -->
+            <!-- TODO: LINEのリンク（li.me みたいなやつがラインで使える気がするのでたぶんそれ） -->
+            <a href="#" class="button">
+              <img src="images/line.svg" alt="a">
+              <span>LINEでお問合わせ</span>
+            </a>
+            <!-- TODO: メールアドレス -->
+            <a href="mailto:メールアドレス" class="button">
+              <img src="images/mail.svg" alt="a">
+              <span>メールでお問合わせ</span>
+            </a>
+          </div>
+        </div>
+          
+        </div><!-- /.sp_top -->
+        <div class="moko"></div>
+
 			</div><!-- /.green  -->
-			<div class="moko"><img src="/images/green3.svg" alt=""></div>
+
 		</header><!-- /.page-header .wrapper  -->
 
-<div class="bodycontent" id="home">
-<!--<div id="home" class="big-bg">-->
-	<img class="tori" src="images/tori.svg">
-<!-- <div class="flag">
-	  <img src="images/flag1.png">
- 	 <img src="images/flag2.png">
-	</div>/.flag  
-  	<div class="home-content wrapper">
-			<h2 class="page-title">いつでも、なんでも　<br>聞いてください</h2>
-			<p>こんなことで質問していいのかな？<br>知識が無さ過ぎて怒られないかな？<br>そんな不安は要りません！<br>あなたの味方になる、税理士事務所です。</p>
-		<a href="https://m.facebook.com/iwaichiyou5555/"><img class="facebook" src="images/facebook.png"></a>
-	</div><!-- /.home-content -->
-<!--</div>--><!-- /#home .big-bg -->
-		
-			
-	<div class="toppage">
-		<div class="home-content">
-			<h2 class="page-title"><img src="images/logo-midori.svg" alt="濱田貴之税理士事務所"></h2>
-			<div class="main">
-				<div class="div6"></div>
-				<div class="div1"><img src="images/lamp.svg" class="lamp"> </div>
-				<div class="div2"><img src="images/hama.png"> </div>
-				<div class="div3"><p ><span>いつでも、なんでも　<br>聞いてください</span></p><br><br></div>
-				<div class="div4"><p>こんなことで質問していいのかな？<br>知識が無さ過ぎて怒られないかな？<br>そんな不安は要りません！<br>あなたの味方になる、税理士事務所です。</p> </div>
-				<div class="div5"><video src="images/table.mp4" autoplay muted loop><video src="images/chair.mp4" autoplay muted loop></video></div>
-				
-			
-			</div><!-- /.main --><video src="images/chair.mp4" autoplay muted loop></video>
-		</div></div><!-- /.home-content-->
-		<div class="newinfo">
-			<table>
-				<tr>
-					<th colspan="2">新着情報<span><img src="images/new.png"></span></th>
-				</tr>
-			</table>
-			<div class="dropdown">
-				<ul>
-					
-				<!--	<li>
-						<table class="pc">
-							<tr>
-								<td><span><!-- ３番目に新しい情報の日付はこの手前に打ち込んでください--> <!--</span></td>
-					 <!--			<td><!-- ３番目に新しい情報はこの手前に打ち込んでください--> <!--</td>
-							</tr>
-						</table>
-					</li> -->
-					<li>
-						<table class="pc">
-							<tr>
-								<td><span>22/05/25<!-- ２番目に新しい情報の日付はこの手前に打ち込んでください--></span></td>
-								<td>プレ保育「ちゅーりっぷひろば」開催のお知らせです。令和５年度に入園予定の方を対象に、6月7日10時～（1時間程）を予定しています。<br>
-							お申し込みは電話にて（<a href="tel:052-412-5555">052-412-5555</a>）締切は5月31日です。<!--  2番目に新しい情報はこの手前に打ち込んでください--></td>
-							</tr>
-						</table>
-					</li>
-			<!--		<li>
-						<table class="sp">
-							<tr>
-								<td><span><!-- ３番目に新しい情報の日付はこの手前に打ち込んでください--> <!--</span><br>
-									<!-- ３番目に新しい情報はこの手前に打ち込んでください--> <!--</td>
-				<!--			</tr>
-						</table>
-					</li>-->
-					<li>
-						<table class="sp">
-							<tr>
-								<td><span>22/05/25<!-- ２番目に新しい情報の日付はこの手前に打ち込んでください--></span><br>
-									プレ保育「ちゅーりっぷひろば」開催のお知らせです。令和５年度に入園予定の方を対象に、6月7日10時～（1時間程）を予定しています。<br>
-							お申し込みは電話にて（<a href="tel:052-412-5555">052-412-5555</a>）締切は5月31日です。<!--  2番目に新しい情報はこの手前に打ち込んでください--></td>
-							</tr>
-						</table>
-					</li>
-				</ul>
-			</div><!--  /.dropdown  -->
-		
-			<div class="triger">
-				<table class="pc">
-					<tr>
-						<td><span>22/05/27<!-- 最新の情報の日付はこの手前に打ち込んでください--></span></td>
-						<td>プレ保育「ちゅーりっぷひろば」開催のお知らせです。令和５年度に入園予定の方を対象に、7月4日(月)10時～（1時間程）を予定しています。
-お申し込みは電話にて（<a href="tel:052-412-5555">052-412-5555</a>）締切は6月27日(月)です。<!-- 最新の情報はこの手前に打ち込んでください--></td>
-					</tr>
-				</table>
-				<table class="sp">
-					<tr>
-						<td><span>22/05/27<!-- 最新の情報の日付はこの手前に打ち込んでください--></span><br>
-							プレ保育「ちゅーりっぷひろば」開催のお知らせです。令和５年度に入園予定の方を対象に、7月4日(月)10時～（1時間程）を予定しています。
-お申し込みは電話にて（<a href="tel:052-412-5555">052-412-5555</a>）締切は6月27日(月)です。<!-- 最新の情報はこの手前に打ち込んでください--></td>
-					</tr>
-				</table>
-			<div class="btn-more"><p>--.</p></div>    
-			</div><!-- /.triger-->
-			
-			
-			<!-- jQuery -->
-					<script>
+    <div class="bodycontent" id="home">
 
-						$(function(){
-							$(".dropdown").hide();
-							$(".btn-more").click(function(){
-								$(".triger").prev().slideToggle();
-								$(".btn-more").toggleClass("close");
-							});
-						});
+      <!-- 以下スマホサイズの時に横に追従するメニュー（css調整終わってない） -->
+      <!-- <div>
+        <aside class="side" id="side">
+          <div class="menu">line</div>
+          <div class="menu">mail</div>
+          <div class="menu">chart</div>
+        </aside>
+      </div> -->
+      <!-- スマホサイズの時に横に追従するメニューここまで -->
 
-					</script>
-			
-		</div><!-- /.newinfo -->
-		
-		
-		<div id="touen" class="introduction">
-			<img src="images/line2.png">
-			<h3>当園について</h3>
-			<p class="introduction2 pc">日々の生活や行事を通して<br>
-									たくさん考え、経験を重ねていく子どもたちを愛情を持って見守ります。<br>
-									みずから学ぶこと、自分の力でやりきることを大事にし、<br>
-									子どもたちの成長を見守る保育を行います。</p>
-			<p class="introduction2 sp">日々の生活や行事を通して<br>
-									たくさん考え、経験を重ねていく<br>
-									子どもたちを愛情を持って見守ります。<br>
-									みずから学ぶこと、<br>
-									自分の力でやりきることを大事にし、<br>
-									子どもたちの成長を見守る保育を行います。</p>
-			<div class="pc">
-				<div class="maru">
-					<img src="images/asobu.png">
-					<p class="kakeru"><br>×</p>
-					<img src="images/manabu.png">
-					<p class="kakeru"><br>×</p>
-					<img src="images/sodatsu.png">
-				</div><!-- /.maru -->
-				<div class="maru2">
-					<p>緑豊かな園庭からは、毎日子どもたちの笑い声が聞こえます。体を動かし、のびのびと遊びます。</p>
-					<p>自分を表現することや、お友達に気持ちを伝えることなど、毎日の生活の中で考え、成長しています。</p>
-					<p>水泳練習や１泊２日の園外宿泊保育など、園での経験をきっかけに成長する姿を見ていただけます。</p>
-				</div><!-- /.maru2 -->
-			</div><!-- /.pc -->
-			
-			<div class="sp">
-				<div class="sp_shikaku">
-					<div class="sp_shikaku_ue asobu">
-						<p><span>遊ぶ</span></p>
-						<img src="images/asobi.png">
-					</div>
-					<p>緑豊かな園庭からは、毎日子どもたちの笑い声が聞こえます。体を動かし、のびのびと遊びます。</p>
-				</div><!-- /.sp_shikaku -->
-				<div class="sp_shikaku manabu">
-					<div class="sp_shikaku_ue">
-						<p><span>学ぶ</span></p>
-						<img src="images/22015569.png">
-					</div>
-					<p>自分を表現することや、お友達に気持ちを伝えることなど、毎日の生活の中で考え、成長しています。</p>
-				</div><!-- /.sp_shikaku -->
-				<div class="sp_shikaku sodatsu">
-					<div class="sp_shikaku_ue">
-						<p><span>育つ</span></p>
-						<img src="images/tyurip.png">
-					</div>
-					<p>水泳練習や１泊２日の園外宿泊保育など、園での経験をきっかけに成長する姿を見ていただけます。</p>
-				</div><!-- /.sp_shikaku -->
-			</div><!-- /.sp -->
-		
-		</div><!-- /.introduction -->
-		<div id="daily" class="daily">
-			<img src="images/line2.png">
-			<h3>１日の流れ</h3>
-			<div class="times pc">
-			<table>
-				<tr>
-					<td></td>
-					<td class="time" rowspan="6"><img src="images/time.png"></td>
-					<td><img src="images/souge.jpeg"></td>
-				</tr>
-				<tr>
-					<td><img src="images/iw19c_2879.JPG"></td>
-					<td><span>徒歩で登園</span><br><p>集合場所から教員の引率で、園児同士で手をつなぎ徒歩で登園します。体力がつき、交通ルールも学べ、年下の子への思いやりの心も育ちます。</p></td>
-				</tr>
-				<tr>
-					<td><span>朝活・主活動</span><br><p>全園児登校後、エアロビで体を動かします。<br>その後、主活動の時間が始まります。</p></td>
-					<td><img src="images/IMG_5772.JPG"></td>
-				</tr>
-				<tr>
-					<td><img src="images/iw19c_2996.JPG"></td>
-					<td><span>昼食</span><br><p>週4日が給食、週1日がお弁当です。お友だちと楽しく食事をします。</p></td>
-				</tr>
-				<tr>
-					<td><span>園庭で自由遊び</span><br><p>元気いっぱいに外で遊びます。下園の準備も行います。</p></td>
-					<td><img src="images/kaeri.PNG"></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td><span>帰りの会・徒歩で下園</span><br><p>教員引率の元、下園します。<br>希望者は17:30までの預かり保育を利用できます。</p></td>
-				</tr>
-			</table>
-			</div><!-- /.times .pc -->
-			
-			<div class="sp_times sp">
-				<div class="sp_0830">
-					<img src="images/830.png">
-					<p>集合場所から教員の引率で、園児同士で手をつなぎ徒歩で登園します。<br>体力がつき、交通ルールも学べ、年下の子への思いやりの心も育ちます。</p>
-				</div>
-				<div class="sp_0900">
-					<img src="images/0900.png">
-					<p>全園児登校後、エアロビで体を動かします。その後、主活動の時間が始まります。</p>
-				</div>
-				<div class="sp_1130">
-					<img src="images/1130.png">
-					<p>週4日が給食、週1日がお弁当です。<br>お友だちと楽しく食事をします。</p>
-				</div>
-				<div class="sp_1300">
-					<img src="images/1300.png">
-					<p>元気いっぱいに外で遊びます。<br>下園の準備も行います。</p>
-				</div>
-				<div class="sp_1500">
-					<img src="images/1500.png">
-					<p>教員引率の元、下園します。<br>希望者は17:30までの預かり保育を<br>利用できます。</p>
-				</div>
-			</div><!-- /.sp_times .sp -->
-		</div><!-- /#daily -->
-		
-		<div id="nenkan">
-			<img src="images/line2.png">
-			<h3>年間行事</h3>
-			<div class="container pc">
-				<img src="images/nenkan.png">
-			</div><!-- /.container pc-->
-			<div class="sp_container sp">
-				<img src="images/sp_nenkan.png">
-				<p>※行事開催月はカレンダーによって変動します。</p>
-			</div><!-- /.sp_container sp -->
-			
-		</div><!-- /#nenkan -->
-		
-		<div id="tokubetsu">
-			<img src="images/line2.png">
-			<h3>特別授業</h3>
-			<div class="tokubetsu pc">
-				<table class="ue">
-				<tr>
-					<td><img src="images/tokusui.jpg"></td>
-					<td><img src="images/1.jpg"></td>
-				</tr>
-				<tr>
-					<th>水泳特訓<br><span>年中・年長対象</span></th>
-					<th>サマーアドベンチャー<br><span>年長対象／自由参加</span></th>
-				</tr>
-				<tr>
-					<td><p>年中クラスは、水中での目開き。年中クラスはクロールで1 0 メートル泳ぐことが最終目的です。<br>目標に向かって頑張る、ひとりひとりの成長のステップを大事にします。</p></td>
-					<td><p>8 月下旬に、一泊で郡上八幡へ出かけます。鍾乳洞見学、マスつかみ、花火大会、肝試し、山登りや宝探しなど、一生の思い出になるようなたくさんの冒険をします。</p></td>
-				</tr>
-			</table>
-			
-			<table class="shita">
-				<tr>
-					<td><img src="images/syuuji.jpg"></td>
-					<td><img src="images/taiiku.jpg"></td>
-					<td><img src="images/iw19c_3323.JPG.jpg"></td>
-				</tr>
-				<tr>
-					<th>習字<br><span>年長対象／基本的に週１回</span></th>
-					<th>体育<br><span>年少・年中・年長対象／週１回</span></th>
-					<th>お茶会<br><span>年少・年中・年長対象</span></th>
-				</tr>
-				<tr>
-					<td><p>毛筆で、ひらがな2 文字の単語を、年間1 0 種類ほど書き上げます。<br>集中力・忍耐力を養えます。</p></td>
-					<td><p>1 学期は5 月～ プール開きまで<br>2 学期は運動会後～ 1 2 月上旬まで<br>3 学期は持久走を行います。</p></td>
-					<td><p>お寺の会室にて基本的な作法を習います。（ 抹茶ではなくお番茶です） 集中力・忍耐力を養えます。<br>学年によって年3 ～ 6 回行います。</p></td>
-				</tr>
-			</table>
-			
-			</div><!-- /.tokubetsu .pc  -->
-			
-			<div class="sp_tokubetsu sp"> 
-				
-				<div class="suiei">
-					<b>水泳特訓</b><br>
-					<span>年中・年長対象</span><br>
-					<img src="images/tokusui.jpg">
-					<p>年中クラスは、水中での目開き。年中クラスはクロールで1 0 メートル泳ぐことが最終目的です。<br>目標に向かって頑張る、ひとりひとりの成長のステップを大事にします。</p>
-				</div>
-				<div class="summer">
-					<b>サマーアドベンチャー</b><br>
-					<span>年長対象／自由参加</span><br>
-					<img src="images/1.jpg">
-					<p>8 月下旬に、一泊で郡上八幡へ出かけます。鍾乳洞見学、マスつかみ、花火大会、肝試し、山登りや宝探しなど、一生の思い出になるようなたくさんの冒険をします。</p>
-				</div>
-				<div class="syuji">
-					<b>習字</b><br>
-					<span>年長対象／基本的に週１回</span><br>
-					<img src="images/syuuji.jpg">
-					<p>毛筆で、ひらがな2 文字の単語を、年間1 0 種類ほど書き上げます。<br>集中力・忍耐力を養えます。</p>
-				</div>
-				<div class="taiku">
-					<b>体育</b><br>
-					<span>年少・年中・年長対象／週１回</span><br>
-					<img src="images/taiiku.jpg">
-					<p>1 学期は5 月～ プール開きまで<br>2 学期は運動会後～ 1 2 月上旬まで<br>3 学期は持久走を行います。</p>
-				</div>
-				<div class="otya">
-					<b>お茶会</b><br>
-					<span>年少・年中・年長対象</span><br>
-					<img src="images/iw19c_3323.JPG.jpg">
-					<p>お寺の会室にて基本的な作法を習います。（ 抹茶ではなくお番茶です） <br>集中力・忍耐力を養えます。<br>学年によって年3 ～ 6 回行います。</p>
-				</div>
-				<p class="sp_kome">※コロナウイルス感染症の流行により、時期によっては実施できない授業もあります。</p>
-			</div><!-- /.sp_tokubetsu .sp  -->
-		</div><!-- /#tokubetsu-->
-		
-		<div id="shisetsu">
-			<img src="images/line2.png">
-			<h3>施設紹介</h3>
-			
-			<div class="shisetsu pc">
-				<table class="ue">
-				<tr>
-					<td><img src="images/ensha.png"></td>
-					<td><img src="images/yugu.png"></td>
-				</tr>
-				<tr>
-					<td><p>園地面積1,703平方m　515坪／運動場面積1,131平方m 342坪</p></td>
-					<td><p>2つの園庭で伸び伸びと遊ぶことが出来ます。</p></td>
-				</tr>
-			</table>
-			
-			<table class="shita">
-				<tr>
-					<td><img src="images/pool.png"></td>
-					<td><img src="images/bol.png"></td>
-					<td><img src="images/shiba.png"></td>
-				</tr>
-				<tr>
-					<td><p>屋上にはプールがあります。</p></td>
-					<td><p>遊戯室にボルダリングウォールを<br>設置しました。</p></td>
-					<td><p>園グラウンドはR 2 年６ 月から芝生<br>を養成しています。</p></td>
-				</tr>
-			</table>
-			</div><!-- /.shisetsu .pc -->
-			
-			<div class="sp_shisetsu sp">
-				<img src="images/ensha.png">
-				<p>園地面積1,703平方m　515坪<br>運動場面積1,131平方m 342坪</p>
-				<img src="images/yugu.png">
-				<p>2つの園庭で伸び伸びと遊ぶことが出来ます。</p>
-				<img src="images/pool.png">
-				<p>屋上にはプールがあります。</p>
-				<img src="images/bol.png">
-				<p>遊戯室にボルダリングウォールを設置しました。</p>
-				<img src="images/shiba.png">
-				<p>園グラウンドはR２年６月から芝生を養成しています。</p>
-			</div><!-- /.sp_shisetsu .sp -->
-			
-		</div><!-- /#shisetsu-->
-		
-		<div id="nyuen">
-			<img src="images/line2.png">
-			<h3 class="introduction1">入園案内</h3>
-			
-			<div class="wrapper grid">
-				<div class="item">
-					<h4>募集要項</h4>
-					<p>
-						「入園願書」に必要事項を記入し入園金及び入園手数料を添えてお申込み下さい。
-						<br><br>
-						<span>検定料　5 , 0 0 0 円</span>
-						<br><br>
-						<p class="kome">※ 願書受付は1 1月1日より順次受付けておりますが定員になり次第、締め切りますのでお早目にお申し込み下さい。</p>
-					</p>
-				</div>
-				<div class="item">
-					<h4>募集年齢</h4>
-					<p>
-						年度途中に満３歳を迎えるお子さんについては事前に入園面接を行い、4期に分かれ入園いただきます。<p class="kome">※ 定員有、人数により抽選</p></p>
-						<table class="none">
-							<tri><th></th><th></th></tri>
-						</table>
-						<table>
-							<tr>
-								<td>4 ・5 月生まれ</td>
-								<td class="adm">6 月入園</td>
-							</tr>
-						</table>
-						<table>
-							<tr>
-								<td>6 ・7 ・8 月生まれ</td>
-								<td class="adm">9 月入園</td>
-							</tr>
-						</table>
-						<table>
-							<tr>
-								<td>9 ・1 0 月生まれ</td>
-								<td class="adm">1 1月入園</td>
-							</tr>
-					    </table>
-						<table>
-							<tr>
-								<td>1 1 ・1 2 月生まれ</td>
-								<td class="adm">1 月入園</td>
-							</tr>
-						</table>
-					</p>
-				</div>
-				<div class="item">
-					<h4>毎月の学費</h4>
-					<p>
-						<span>PTA会費1,000円　<br>給食費350円× 給食回数</span>
-						<br>
-						<p class="kome">※保育料は国からの補助により自己負担0円</p>
-					</p>
-				</div>
-				<div class="item">
-					<h4>保育日数</h4>
-					<p>
-						<span>原則として週に5日<br>（ 月・火・水・木・金 ）</span>
-					</p>
-				</div>
-				<div class="item">
-					<h4>保育時間</h4>
-					<p>
-						<span>9時～15時まで</span>
-						<br>
-						<p class="kome">※行事等で変更あり</p>
-					</p>
-				</div>
-				<div class="item">
-					<h4>昼食</h4>
-					<p>
-						<span>給食：週４回（ 月・火・木・金 ）<br>弁当：週1回（ 水 ）</span>
-						<br>
-						<p class="kome">※短縮・行事等で変更あり</p>
-					</p>
-				</div>
-				<div class="item">
-					<h4>預かり保育</h4>
-					<p>
-						月～金の通常保育終了時間から17時30分まで、年少児は6月～。満3歳児の預かり保育はありません。
-						<br><br>
-						<span>１回/ 500円<br>月預かり/ 5,000円</span>
-						<br>
-						<p class="kome">※短縮・行事等で変更あり</p>
-					</p>
-				</div>
-				<div class="item bike">
-					<img src="images/bike2.png">
-				</div>
-			</div> <!-- /.wrapper grid -->
+	    <img class="tori" src="images/tori.svg">
 
-			<div class="toiawase">
-				<div class="fuki">
-					<img src="images/fuki.png">
-				</div>
-				<div class="item tell">
-					<a href="tel:052-412-5555"><img src="images/tel.png"></a>
-				</div>
-			</div> <!-- toiawase -->	
-			
-		</div><!-- /#nyuen -->
-			
-		<div id="accses">
-			<img src="images/line2.png">
-			<h3 class="introduction1">アクセス</h3>
-			<div class="pc">
-			<div class="location">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13048.81788798685!2d136.841258!3d35.151521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x915804346c27f5d2!2z5bKp5aGa56ys5LiA5bm856ia5ZyS!5e0!3m2!1sja!2sjp!4v1652378029941!5m2!1sja!2sjp" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				<div class="location2">
-				<h4 class="iwa"><span>学校法人藤井学園</span><br>岩塚第一幼稚園</h4><br>
-				<p>
-					〒453-0863<br>
-					名古屋市中村区八社1-145<br>
-					<br>
-					TEL  052-412-5555<br>
-					<br>
-					<br>
-					市バス<br>
-					系統名＜名駅12＞「城前」停留所より<br>
-					徒歩5分<br>
-					<br>
-					駐車場有（職員にお声がけください）
-				</p>
-			</div><!-- /.location2 -->
-				
-		</div><!-- /.location .pc -->
-		</div>
-		<div class="sp_location sp">
-					<h4 class="iwa sp"><span>学校法人藤井学園</span><br>岩塚第一幼稚園</h4><br>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13048.81788798685!2d136.841258!3d35.151521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x915804346c27f5d2!2z5bKp5aGa56ys5LiA5bm856ia5ZyS!5e0!3m2!1sja!2sjp!4v1652378029941!5m2!1sja!2sjp" width="430" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				<p>
-					〒453-0863<br>
-					名古屋市中村区八社1-145<br>
-					<br>
-					TEL  052-412-5555<br>
-					<br>
-					<br>
-					市バス<br>
-					系統名＜名駅12＞「城前」停留所より<br>
-					徒歩5分<br>
-					<br>
-					駐車場有（職員にお声がけください）
-				</p>
-		</div><!-- /.sp_location .sp -->
-		</div><!-- /#accses -->
-		
-		
-	</div><!-- /.toppage -->
-	</div><!-- /.bodycontent  -->	
+      <div class="toppage">
 
-	<footer>
-		<div class="wrapper footer">
-			<a href="index.html"><img src="images/logo5.png" alt="岩塚第一幼稚園"></a>
-			<p>Copyright<small>&copy;</small>Iwatsuka Daiichi Youchien. All Rights Reserved.</p>
-		</div>		
+        <div class="home-content">
+          
+          <h2 class="page-title"><img src="images/logo-midori.svg" alt="濱田貴之税理士事務所"></h2>
+          
+          <div class="main">
+            <div class="div7"></div>
+            <div class="div1"><img src="images/lamp.svg" class="lamp"> </div>
+            <div class="div2"><img src="images/hama.png"> </div>
+            <div class="div3"><p ><span>いつでも、なんでも　<br>聞いてください</span></p><br><br></div>
+            <div class="div4"><p>こんなことで質問していいのかな？<br>知識が無さ過ぎて怒られないかな？<br>そんな不安は要りません！<br>あなたの味方になる、税理士事務所です。</p> </div>
+            <div class="div5"><img src="images/table.png"></div>
+            <div class="div6"><img src="images/chair.gif"></div> 
+          </div><!-- /.main -->
+
+        </div><!-- class="home-content"-->
+
+
+        <div id="chart" class="chart">
+          <div class="h3">
+            <h3>
+              <span>chart</span><br>
+              <span>ご相談チャート</span>
+            </h3>
+            <img src="images/subtitle.svg" class="subtitle">
+          </div>
+
+          <div class="chart-menu">
+            <img src="images/board.svg">
+            <iframe width='600px' height='500px' src='https://embed.judge-hub.com/est/frbxc/bae3f3fe-a863-45e3-ad24-7e9011419014' title='Judge player' frameborder='0'></iframe>
+          </div><!-- /.chart-menu -->
+
+        </div><!-- /#chart .chart -->
+          
+        <div id="work">
+			    <div class="h3">
+				    <h3><span>work</span><br>できること</h3>
+				    <img src="images/subtitle.svg">
+		 	    </div>
+          <div class="work pc">
+            <div class="parent">
+              <a href="#kojin"><img src="images/kojin.png"></a>
+              <a href="#kojin"><img src="images/hojin.png"></a>
+              <a href="#kojin"><img src="images/sozoku.png"></a>
+              <a href="#kojin"><img src="images/sonota.png"></a>
+            </div>
+			    </div><!-- /.work .pc  -->
+			
+          <div class="sp_work sp"> 
+            <div class="parent">
+              <a href="#kojin"><img src="images/kojin.png"></a>
+              <a href="#kojin"><img src="images/hojin.png"></a>
+              <a href="#kojin"><img src="images/sozoku.png"></a>
+              <a href="#kojin"><img src="images/sonota.png"></a>
+            </div>
+          </div><!-- /.sp_work .sp  -->
+			
+			 
+          <div class="more">
+	    			<p><br>Read more</p>
+			    	<div class="link"><a href="about.html"><img src="images/link.svg"></a></div>
+    	      <div class="link"><a href="about.html">＞＞私たちについて</a></div>
+			    </div>
+			
+		    </div><!-- /#work-->
+        <div class="accese">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1eVk9jcAvVu5PGih-SfBsybNT4VpkyMk&ehbc=2E312F" width="640" height="480"></iframe>
+        </div>
+        <div class="jirocho">
+          <div class="jiro1"><img src="images/window.png"></div>
+          <div class="jiro2"><p>国登録文化財・次郎長生家の隣にある静岡市の税理士事務所です。<br>どんな些細なことでも気軽にお問合せください</p></div>
+          <div class="jiro3"><img src="images/fuki.png"></div>
+          <div class="jiro4"><img src="images/plant.png"></div>
+        </div>
+  		</div><!-- /.toppage -->
 	
-	</footer>
-	
-			
+      <footer id="footer">
+        <div class="moko2"><img src="images/green4.svg"></div>
+        <div class="green">
+          <div class="footer-top">
+            <div class="share">
+              <div class="s1"><p>Contact</p></div>
+              <div class="s2"><p>▷</p></div>
+              <div class="s3"><a href="tel:054-355-5107"><span>054-355-5107</span></a></div>
+              <div class="s4"><p>Follow me</p></div>
+              <div class="s5"><p>▷</p></div>
+              <div class="s6"><a href="#"><img src="images/instagram.svg"></a><a href="#"><img src="images/line2.png"></a></div>
+              <div class="s7"><p>Share</p></div>
+              <div class="s8"><p>▷</p></div>
+              <div class="s9"><a href="#"><img src="images/twitter.svg"></a><a href="#"><img src="images/facebook.png"></a></div>
+            </div><!-- /.share-->
+            <div class="jigyo">
+              <img src="images/kusa.svg">
+              <p>
+                <span>事業内容</span><br>
+                経理処理サポート<br>
+                各種税金申告業務<br>
+                補助金申請作業補助<br>
+                事業計画作成等(各種相談)<br>
+              </p>
+              <img src="images/kusa.svg">
+            </div><!-- /.jigyo-->
+          </div><!-- /.footer-top-->
+          
+          <div class="footer-bottom">
+            <div class="map">
+              <img src="images/map.svg">
+              <p>〒424-0945 静岡県静岡市清水区美濃輪町４−１５−２</p>
+            </div><!-- /.map-->
+            <div class="kanban"><img src="images/kanban.svg"></div>
+          </div><!-- /.footer-bottom-->
+          
+          <div class="copy"><p>Copyright<small>&copy;</small>Hamada Takayuki Tax Accountant Office. All Rights Reserved.</p></div>
+        
+        </div><!-- /.green-->
+      
+      </footer>
+
+	  </div><!-- /.bodycontent  -->	
 			
 	</body>
+
+  <script>
+
+    // --- 以下ハンバーガーメニューの開け閉め
+    const ham=$('#js-hamburger');
+    const nav=$('#js-nav');
+    ham.on('click',function(){
+      ham.toggleClass('active');
+      nav.toggleClass('active');
+    });
+
+
+    // --- 以下ヘッダーが途中で変わる処理（使う時にcssと一緒にコメントアウト外す。調整は必要）
+    // 参考サイト：https://takblog.site/web/?p=1453
+
+    // const headerH = $("#header").outerHeight(true);//headerの高さを取得    
+
+    // //スクロール途中からヘッダーの高さを変化させるための設定を関数でまとめる
+    // function FixedAnime() {
+    //   //ヘッダーの高さを取得
+    //   const scroll = $(window).scrollTop();
+    //   if (scroll >= headerH){//ヘッダーの高さを超えたら
+    //     $('#header').addClass('HeightMin');//#headerについているHeightMinというクラス名を付与
+    //   } else {
+    //     $('#header').removeClass('HeightMin');//HeightMinというクラス名を除去
+    //   }    
+    // }
+
+    // // 画面をスクロールをしたら動かしたい場合の記述
+    // $(window).scroll(function () {
+    //   FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
+    // });
+
+    // // ページが読み込まれたらすぐに動かしたい場合の記述
+    // $(window).on('load', function () {
+    //   FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
+    // });
+
+    // //リンク先のidまでスムーススクロール
+    // //※ページ内リンクを行わない場合は不必要なので削除してください
+    // $('#g-navi li a').click(function () {
+    //   const headerVal = $("#header").outerHeight(true);	//現在のheaderの高さを取得    
+
+    //   //ヘッダーが高さの状態を取得してスクロールする範囲を調整する
+    //   const scroll = $(window).scrollTop();	//スクロール
+    //   const adjust = 0						//調整の変数
+    //   if(scroll <= headerVal ){			//スクロールとヘッダーの高さを取得
+    //     adjust = 70;					//スクロール値がヘッダーの高さ以内であれば調整変数に70を入れる
+    //   }
+      
+    //   const elmHash = $(this).attr('href'); //hrefを取得
+    //   const pos = $(elmHash).offset().top-headerVal-adjust;	//クリックしたheader分の高さと調整分を引いた高さまでスクロール
+      
+    //   $('body,html').animate({scrollTop: pos}, 1000);
+    //   return false;
+    // });
+
+    // --- ヘッダーが途中で変わる処理ここまで
+  </script>
 </html>

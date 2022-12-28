@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 613.75 123.64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efefef;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #547766;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #5a6955;
+        font-family: KiwiMaru-Regular, 'Kiwi Maru';
+        font-size: 43px;
+        letter-spacing: .25em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="1" y="1" width="611.75" height="121.64" rx="60.82" ry="60.82"/>
+  <rect class="cls-2" x="7.36" y="6.47" width="599.04" height="110.7" rx="55.35" ry="55.35"/>
+  <text class="cls-3" transform="translate(126.56 77.66)"><tspan x="0" y="0">私たちについて</tspan></text>
+</svg>
