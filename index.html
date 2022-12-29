@@ -82,13 +82,12 @@
 
 
       <!-- TODO: 以下スマホサイズの時に横に追従するメニュー（css調整終わってない） -->
-      <!-- <div>
-        <aside class="side" id="side">
-          <div class="menu">line</div>
-          <div class="menu">mail</div>
-          <div class="menu">chart</div>
-        </aside>
-      </div> -->
+    <div class="side-menu">
+      <div class="side-menu-icon">MENU</div>
+      <div class="side-menu-icon">LINE</div>
+      <div class="side-menu-icon">MAIL</div>
+      <div class="side-menu-icon">CHART</div>
+    </div>
       <!-- スマホサイズの時に横に追従するメニューここまで -->
     <img class="tori" src="images/tori.svg">
     <div class="toppage">
@@ -115,23 +114,22 @@
             <span>chart</span><br>
             ご相談チャート
           </h3>
-          <img src="images/subtitle.svg" class="subtitle">
+          <img src="images/subtitle.svg">
         </div>
 
         <div class="chart-menu">
-          <!-- TODO: 画像をbackground-imageにして真ん中にチャート埋め込みたい（できるかわかんない） -->
           <img src="images/board.svg">
           <iframe width='600px' height='500px' src='https://embed.judge-hub.com/est/frbxc/bae3f3fe-a863-45e3-ad24-7e9011419014' title='Judge player' frameborder='0'></iframe>
         </div><!-- /.chart-menu -->
 
       </div><!-- /#chart .chart -->
         
-      <div id="work">
+      <div>
         <div class="h3">
           <h3><span>work</span><br>できること</h3>
-          <img src="images/subtitle.svg" class="subtitle">
+          <img src="images/subtitle.svg">
         </div>
-        <div class="work pc">
+        <div class="work">
           <div class="parent">
             <!-- TODO: この画像のサイズが大きいからいい感じにしたい -->
             <a href="#kojin"><img src="images/kojin.png"></a>
@@ -141,16 +139,7 @@
           </div>
         </div><!-- /.work .pc  -->
     
-        <div class="sp_work sp"> 
-          <div class="parent">
-            <a href="#kojin"><img src="images/kojin.png"></a>
-            <a href="#kojin"><img src="images/hojin.png"></a>
-            <a href="#kojin"><img src="images/sozoku.png"></a>
-            <a href="#kojin"><img src="images/sonota.png"></a>
-          </div>
-        </div><!-- /.sp_work .sp  -->
-    
-      </div><!-- /#work-->
+      </div>
 
       <div class="more">
         <div class="more-link">
@@ -160,7 +149,7 @@
         </div>
       </div>
 
-      <div class="accese">
+      <div class="access">
         <iframe src="https://www.google.com/maps/d/embed?mid=1eVk9jcAvVu5PGih-SfBsybNT4VpkyMk&ehbc=2E312F" width="640" height="480"></iframe>
       </div>
       <div class="jirocho">
@@ -172,7 +161,7 @@
     </div><!-- /.toppage -->
 
     <!-- TODO: footerの下に余白ができているのを消したい -->
-    <footer id="footer">
+    <footer class="footer">
       <div class="moko2"><img src="images/green4.svg"></div>
       <!-- TODO: footerもくもくの下に余白あり -->
       <div class="green">
@@ -215,7 +204,6 @@
     
     </footer>
 
-			
 	</body>
 
   <script>

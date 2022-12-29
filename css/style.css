@@ -21,6 +21,75 @@ a {
 .sp{
 	display:none !important;
 }
+
+.side-menu {
+	display: none;
+}
+
+
+@media screen and (max-width: 400px), (max-device-width: 400px) {
+
+	.side-menu {
+		display: bolck;
+
+		/* position: absolute; */
+		top: 370px;
+		right: 0px;
+		height:80px;
+		text-align: right;
+
+		/* Rectangle 66 */
+
+		box-sizing: border-box;
+
+		/* position: absolute; */
+		width: 100px;
+		height: 444px;
+		left: 1243px;
+		top: 302px;
+
+		background: #F0EDEA;
+		border: 8px solid #D1C9C0;
+		border-radius: 22px;
+
+
+		/* -webkit-box-align: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		gap: 16px; */
+		height: fit-content;
+		position: sticky;
+		/* top: 16px; */
+		z-index: 5;
+	}
+
+	.side-menu-icon {
+		/* Ellipse 64 */
+
+		/* box-sizing: border-box; */
+
+		/* position: relative;
+		width: 97px;
+		height: 97px; */
+		/* left: 1300px;
+		top: 596px; */
+
+		border: 6px solid #557968;
+
+		/* ベルの無料のアイコン素材 その2 (1) 1 */
+
+		/* position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 1324px;
+		top: 620px;
+
+		background: url(ベルの無料のアイコン素材 その2 (1).png); */
+
+
+	}
+}
 /*h3{
 	font-size:2.6rem;
 	font-weight:bold;

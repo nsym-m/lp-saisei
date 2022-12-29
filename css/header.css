@@ -155,8 +155,6 @@
 }
 
 
-
-
 @media screen and (max-width: 400px), (max-device-width: 400px) {
 	.nav {
         border-left: unset;
@@ -291,3 +289,4 @@
   } */
   
 /* --- 以下ヘッダーが途中で変わる処理ここまで */
+

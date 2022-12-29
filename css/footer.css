@@ -53,32 +53,37 @@
 }
 .jiro1 img{
 	position:absolute;
-	top:10px;
-	left:90px;
+	top:115px;
+	left: calc(50% - 400px);
+	/* left:90px; */
 	width:270px;
 }
 .jiro2{
 	position:absolute;
 	top:50px;
-	left:400px;
+	left: calc(50% - 130px);
+	/* left:400px; */
 	font-size:0.9rem;
 }
 .jiro3 img{
 	position:absolute;
-	top:40px;
-	left:370px;
+	top:20px;
+	left: calc(50% - 170px);
+	/* left:370px; */
 	width:450px;
 }
 .jiro4 img{
 	position:absolute;
-	top:150px;
-	left:770px;
+	top:170px;
+	left: calc(50% + 180px);
+	/* left:770px; */
 	width:150px;
 	transform:rotate(10deg);
 }
 
-
-
+.footer {
+	height: 10px;
+}
 
 /*mokomoko*/
 .moko2{
@@ -95,8 +100,8 @@
 .green{
 	background-color:#557968;
 	color:#f0edea;
-	width:100vw;
-	flex-wrap:wrap;
+	width:100%;
+	height: auto;
 	margin: 0;
 }
 .footer-top{
@@ -104,7 +109,6 @@
 	justify-content:space-around;
 	flex-wrap:wrap;
 	vertical-align: center;
-	padding: 60px 0 0;
 	width:100vw;
 	
 }
@@ -165,7 +169,7 @@
 	flex-wrap:wrap;
 	flex-direction: row-reverse;
 	vertical-align: center;
-	margin: 100px 0 80px 0px;
+	margin: 15px 0 50px 0px;
 	width:100vw;
 }
 .map img{
@@ -178,7 +182,7 @@
 }
 .kanban img{
 	width:600px;
-	margin:100px 20px 0 0;
+	margin:20px;
 }
 .copy{
    	text-align:center;

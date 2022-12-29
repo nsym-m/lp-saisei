@@ -12,13 +12,10 @@
 	padding-top: 0;
 	position: relative;
 	width:100%;
-	
 }
 
 /* TODO:  */
 .tori {
-	/* margin:90px 0 0 70px; */
-	/* background-color:#d1c9c0; */
 	position: absolute;
 	top: 370px;
 	left: 140px;
@@ -173,7 +170,7 @@ h3 span{
 	position: absolute;
 	width: 850px;
 	top: 80px;
-	left: calc(45% - 387px);
+	left: calc(45% - 380px);
 }
 .chart-menu iframe{
 	position: absolute;
@@ -184,24 +181,32 @@ h3 span{
 	border-radius: 5px;
 }
 
+.work-parent {
+	position: relative;
+}
+
 /*できること*/
 .work{
+	position: relative;
 	text-align:right;
 	margin:0 auto 30px;
 	width:70%;
-	
 }
 .parent{
+	/* position: absolute; */
 	display:flex;
 	flex-wrap:wrap;
+	justify-content: center;
+	align-items: center;
+	/* left: calc(45% - 290px); */
 }
 .parent img{
-	width:350px;
+	width:320px;
 	padding:20px 8px;
 }
 .parent a:hover{
-     opacity: .7;
-	}
+	opacity: .7;
+}
 
 /*more*/
 .more{
@@ -237,26 +242,8 @@ h3 span{
      opacity: .7;
 	}
 
-.accese iframe{
+.access iframe{
 	margin-bottom: 80px;
 	border:70px #557968 solid;
 	border-radius:10px;
 }
-
-
-@media (max-width: 970px) {
-	/* .nav {
-		display: none;
-	}
-	.main-nav {
-		display: none;
-	}
-	.nav-bean{
-		display: none;
-	} */
-}
-
-
-
-
-
