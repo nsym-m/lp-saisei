@@ -97,37 +97,40 @@
 	color:#f0edea;
 	width:100vw;
 	flex-wrap:wrap;
+	margin: 0;
 }
 .footer-top{
 	display:flex;
 	justify-content:space-around;
 	flex-wrap:wrap;
 	vertical-align: center;
-	margin: 100px 0 0 0px;
+	padding: 60px 0 0;
 	width:100vw;
 	
 }
 .share {
 	display: grid;
-	grid-template-columns:100px 50px 400px;
-	grid-template-rows: repeat(3, 60px);
+	grid-template-columns:120px 50px 400px;
+	grid-template-rows: repeat(3, 70px);
 	grid-column-gap: 0px;
 	grid-row-gap: 20px;
 	text-align:left;
 	position:relative;
-	margin:40px 0 40px 110px;
+	margin:40px 0 40px 40px;
 }
 .share p{
 	color:#F0EDEA;
 	vertical-align: bottom;
+	font-size:1.1rem;
+	
 }
 .share img{
-	width:35px;
+	width:45px;
 	margin: 0 10px;
 }
 .share a{
 	color:#F0EDEA;
-	font-size:1.7rem;
+	font-size:2rem;
 	letter-spacing:0.4rem;
 	vertical-align: top;
 }
@@ -136,8 +139,8 @@
 	}
 .share span{
 	position:absolute;
-	top:-8px;
-	left:157px;
+	top:-14px;
+	left:177px;
 }
 .jigyo p{
 	color:#F0EDEA;
@@ -174,7 +177,7 @@
 	margin-top: 10px;
 }
 .kanban img{
-	width:60%;
+	width:600px;
 	margin:100px 20px 0 0;
 }
 .copy{
@@ -187,5 +190,6 @@
    	text-align:center;
     font-size:0.8rem;
 	letter-spacing:0.1rem;
-	margin: 0 auto 30px ;
+	margin: 0 auto;
+	padding-bottom: 30px;
 }
