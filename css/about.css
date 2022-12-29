@@ -172,7 +172,7 @@ h4 span{
 .chart{
 	position:relative;
 	text-align:center;
-	width:1000px;
+	width:100%;
 	margin-bottom: 50px;
 }
 .chart-menu{

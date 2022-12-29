@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>濱田貴之税理士事務所</title>
 		<meta name="discription" content="国登録文化財・次郎長生家の隣にある静岡市の税理士事務所です">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
 	<!--CSS -->
 
@@ -38,68 +38,41 @@
 	
 	<body>
 		<header class="page_header wrapper" id="header">
-      <div class="green">
+      <div class="header">
         
-        <button class="header_hamburger hamburger" id="js-hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <div class="nav pc">
-          <nav>
-            <ul class="main-nav">
-              <div class="nav-in">
-              <li><img class="nav-bean" src="images/shiromame.png"><a href="#touen">私たちについて</a></li><!--#は未変更 -->
-              <li><img class="nav-bean" src="images/shiromame.png"><a href="#daily">相談チャート</a></li>
-              <li><img class="nav-bean" src="images/shiromame.png"><a href="#tokubetsu">できること</a></li>
-              <li><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">料金表</a></li>
-              <li><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">アクセス</a></li>
-              </div>
-            </ul>
-          </nav>
+        <div class="nav">
+          <ul class="main-nav">
+            <!-- TODO: リンクを踏んだ時に場所移動する処理(jQuery) -->
+            <li><img class="nav-bean" src="images/shiromame.png"><a href="#touen">私たちについて</a></li><!--#は未変更 -->
+            <li><img class="nav-bean" src="images/shiromame.png"><a href="#daily">相談チャート</a></li>
+            <li><img class="nav-bean" src="images/shiromame.png"><a href="#tokubetsu">できること</a></li>
+            <li><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">料金表</a></li>
+            <li><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">アクセス</a></li>
+          </ul>
         </div><!-- /.pc nav -->
 
-        <div class="logos pc">
-          <a href="#">
-            <img class="logo" src="images/logo-shiro.svg" alt="濱田貴之税理士事務所">
-          </a>
+        <div class="logos">
           <div>
+            <a href="#">
+              <img class="logo" src="images/logo-shiro.svg" alt="濱田貴之税理士事務所">
+            </a>
             <div class="inquiries">
-              <!-- LINEのリンク（li.me みたいなやつがあった気がするのでたぶんそれ） -->
+              <!-- TODO: LINEのリンク追加（li.me みたいなやつがあった気がするのでたぶんそれ） -->
               <a href="#" class="button">
                 <img src="images/line.svg" alt="a">
                 <span>LINEでお問合わせ</span>
               </a>
-              <!-- TODO: メールアドレス -->
+              <!-- TODO: 先方のメールアドレス -->
               <a href="mailto:メールアドレス" class="button">
                 <img src="images/mail.svg" alt="a">
                 <span>メールでお問合わせ</span>
+              </a> 
+                </a> 
               </a> 
             </div>
           </div>
         </div><!-- /.pc logos -->
 
-        
-
-        <div class="sp_page_header sp">
-          <a href="#">
-            <img class="logo" src="images/logo-shiro.svg" alt="濱田貴之税理士事務所">
-          </a>
-          <div class="inquiries"> -->
-            <!-- TODO: LINEのリンク（li.me みたいなやつがラインで使える気がするのでたぶんそれ） -->
-            <a href="#" class="button">
-              <img src="images/line.svg" alt="a">
-              <span>LINEでお問合わせ</span>
-            </a>
-            <!-- TODO: メールアドレス -->
-            <a href="mailto:メールアドレス" class="button">
-              <img src="images/mail.svg" alt="a">
-              <span>メールでお問合わせ</span>
-            </a>
-          </div>
-        </div>
-          
         </div><!-- /.sp_top -->
         <div class="moko"></div>
 
@@ -107,9 +80,8 @@
 
 		</header><!-- /.page-header .wrapper  -->
 
-    <div class="bodycontent" id="home">
 
-      <!-- 以下スマホサイズの時に横に追従するメニュー（css調整終わってない） -->
+      <!-- TODO: 以下スマホサイズの時に横に追従するメニュー（css調整終わってない） -->
       <!-- <div>
         <aside class="side" id="side">
           <div class="menu">line</div>
@@ -118,129 +90,135 @@
         </aside>
       </div> -->
       <!-- スマホサイズの時に横に追従するメニューここまで -->
-
-	    <img class="tori" src="images/tori.svg">
-
-      <div class="toppage">
-
-        <div class="home-content">
-          
-          <h2 class="page-title"><img src="images/logo-midori.svg" alt="濱田貴之税理士事務所"></h2>
-          
-          <div class="main">
-            <div class="div7"></div>
-            <div class="div1"><img src="images/lamp.svg" class="lamp"> </div>
-            <div class="div2"><img src="images/hama.png"> </div>
-            <div class="div3"><p ><span>いつでも、なんでも　<br>聞いてください</span></p><br><br></div>
-            <div class="div4"><p>こんなことで質問していいのかな？<br>知識が無さ過ぎて怒られないかな？<br>そんな不安は要りません！<br>あなたの味方になる、税理士事務所です。</p> </div>
-            <div class="div5"><img src="images/table.png"></div>
-            <div class="div6"><img src="images/chair.gif"></div> 
-          </div><!-- /.main -->
-
-        </div><!-- class="home-content"-->
-
-
-        <div id="chart" class="chart">
-          <div class="h3">
-            <h3>
-              <span>chart</span><br>
-              <span>ご相談チャート</span>
-            </h3>
-            <img src="images/subtitle.svg" class="subtitle">
-          </div>
-
-          <div class="chart-menu">
-            <img src="images/board.svg">
-            <iframe width='600px' height='500px' src='https://embed.judge-hub.com/est/frbxc/bae3f3fe-a863-45e3-ad24-7e9011419014' title='Judge player' frameborder='0'></iframe>
-          </div><!-- /.chart-menu -->
-
-        </div><!-- /#chart .chart -->
-          
-        <div id="work">
-			    <div class="h3">
-				    <h3><span>work</span><br>できること</h3>
-				    <img src="images/subtitle.svg">
-		 	    </div>
-          <div class="work pc">
-            <div class="parent">
-              <a href="#kojin"><img src="images/kojin.png"></a>
-              <a href="#kojin"><img src="images/hojin.png"></a>
-              <a href="#kojin"><img src="images/sozoku.png"></a>
-              <a href="#kojin"><img src="images/sonota.png"></a>
-            </div>
-			    </div><!-- /.work .pc  -->
-			
-          <div class="sp_work sp"> 
-            <div class="parent">
-              <a href="#kojin"><img src="images/kojin.png"></a>
-              <a href="#kojin"><img src="images/hojin.png"></a>
-              <a href="#kojin"><img src="images/sozoku.png"></a>
-              <a href="#kojin"><img src="images/sonota.png"></a>
-            </div>
-          </div><!-- /.sp_work .sp  -->
-			
-			 
-          <div class="more">
-	    			<p><br>Read more</p>
-			    	<div class="link"><a href="about.html"><img src="images/link.svg"></a></div>
-    	      <div class="link"><a href="about.html">＞＞私たちについて</a></div>
-			    </div>
-			
-		    </div><!-- /#work-->
-        <div class="accese">
-          <iframe src="https://www.google.com/maps/d/embed?mid=1eVk9jcAvVu5PGih-SfBsybNT4VpkyMk&ehbc=2E312F" width="640" height="480"></iframe>
-        </div>
-        <div class="jirocho">
-          <div class="jiro1"><img src="images/window.png"></div>
-          <div class="jiro2"><p>国登録文化財・次郎長生家の隣にある静岡市の税理士事務所です。<br>どんな些細なことでも気軽にお問合せください</p></div>
-          <div class="jiro3"><img src="images/fuki.png"></div>
-          <div class="jiro4"><img src="images/plant.png"></div>
-        </div>
-  		</div><!-- /.toppage -->
-	
-      <footer id="footer">
-        <div class="moko2"><img src="images/green4.svg"></div>
-        <div class="green">
-          <div class="footer-top">
-            <div class="share">
-              <div class="s1"><p>Contact</p></div>
-              <div class="s2"><p>▷</p></div>
-              <div class="s3"><a href="tel:054-355-5107"><span>054-355-5107</span></a></div>
-              <div class="s4"><p>Follow me</p></div>
-              <div class="s5"><p>▷</p></div>
-              <div class="s6"><a href="#"><img src="images/instagram.svg"></a><a href="#"><img src="images/line2.png"></a></div>
-              <div class="s7"><p>Share</p></div>
-              <div class="s8"><p>▷</p></div>
-              <div class="s9"><a href="#"><img src="images/twitter.svg"></a><a href="#"><img src="images/facebook.png"></a></div>
-            </div><!-- /.share-->
-            <div class="jigyo">
-              <img src="images/kusa.svg">
-              <p>
-                <span>事業内容</span><br>
-                経理処理サポート<br>
-                各種税金申告業務<br>
-                補助金申請作業補助<br>
-                事業計画作成等(各種相談)<br>
-              </p>
-              <img src="images/kusa.svg">
-            </div><!-- /.jigyo-->
-          </div><!-- /.footer-top-->
-          
-          <div class="footer-bottom">
-            <div class="map">
-              <img src="images/map.svg">
-              <p>〒424-0945 静岡県静岡市清水区美濃輪町４−１５−２</p>
-            </div><!-- /.map-->
-            <div class="kanban"><img src="images/kanban.svg"></div>
-          </div><!-- /.footer-bottom-->
-          
-          <div class="copy"><p>Copyright<small>&copy;</small>Hamada Takayuki Tax Accountant Office. All Rights Reserved.</p></div>
         
-        </div><!-- /.green-->
-      
-      </footer>
+    <div class="toppage">
+      <!-- TODO: toriをtoppageの中に表示させたいがうまくってない（polygonの外側だと表示されなくなるみたい） -->
+      <img class="tori" src="images/tori.svg">
 
-	  </div><!-- /.bodycontent  -->	
+      <div class="home-content">
+        
+        <!-- TODO: 画面開いた時にスクロールせずにこのタイトルが見えるようにしておきたい（ユーザー体験的なところで） -->
+        <!--       現状画面狭くするとタイトルと５角形がかぶるので要調整 -->
+        <h2 class="page-title"><img src="images/logo-midori.svg" alt="濱田貴之税理士事務所"></h2>
+        
+        <!-- TODO: 配置ずれてるから要調整 -->
+        <div class="main">
+          <div class="div7"></div>
+          <div class="div1"><img src="images/lamp.svg" class="lamp"> </div>
+          <div class="div2"><img src="images/hama.png"> </div>
+          <div class="div3"><p ><span>いつでも、なんでも　<br>聞いてください</span></p><br><br></div>
+          <div class="div4"><p>こんなことで質問していいのかな？<br>知識が無さ過ぎて怒られないかな？<br>そんな不安は要りません！<br>あなたの味方になる、税理士事務所です。</p> </div>
+          <div class="div5"><img src="images/table.png"></div>
+          <div class="div6"><img src="images/chair.gif"></div> 
+        </div><!-- /.main -->
+
+      </div><!-- class="home-content"-->
+
+
+      <div id="chart" class="chart">
+        <div class="h3">
+          <h3>
+            <span>chart</span><br>
+            <span>ご相談チャート</span>
+          </h3>
+          <img src="images/subtitle.svg" class="subtitle">
+        </div>
+
+        <div class="chart-menu">
+          <!-- TODO: 画像をbackground-imageにして真ん中にチャート埋め込みたい（できるかわかんない） -->
+          <img src="images/board.svg">
+          <iframe width='600px' height='500px' src='https://embed.judge-hub.com/est/frbxc/bae3f3fe-a863-45e3-ad24-7e9011419014' title='Judge player' frameborder='0'></iframe>
+        </div><!-- /.chart-menu -->
+
+      </div><!-- /#chart .chart -->
+        
+      <div id="work">
+        <div class="h3">
+          <h3><span>work</span><br>できること</h3>
+          <img src="images/subtitle.svg" class="subtitle">
+        </div>
+        <div class="work pc">
+          <div class="parent">
+            <!-- TODO: この画像のサイズが大きいからいい感じにしたい -->
+            <a href="#kojin"><img src="images/kojin.png"></a>
+            <a href="#kojin"><img src="images/hojin.png"></a>
+            <a href="#kojin"><img src="images/sozoku.png"></a>
+            <a href="#kojin"><img src="images/sonota.png"></a>
+          </div>
+        </div><!-- /.work .pc  -->
+    
+        <div class="sp_work sp"> 
+          <div class="parent">
+            <a href="#kojin"><img src="images/kojin.png"></a>
+            <a href="#kojin"><img src="images/hojin.png"></a>
+            <a href="#kojin"><img src="images/sozoku.png"></a>
+            <a href="#kojin"><img src="images/sonota.png"></a>
+          </div>
+        </div><!-- /.sp_work .sp  -->
+    
+      
+        <div class="more">
+          <p><br>Read more</p>
+          <div class="link"><a href="about.html"><img src="images/link.svg"></a></div>
+          <div class="link"><a href="about.html">＞＞私たちについて</a></div>
+        </div>
+    
+      </div><!-- /#work-->
+      <div class="accese">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1eVk9jcAvVu5PGih-SfBsybNT4VpkyMk&ehbc=2E312F" width="640" height="480"></iframe>
+      </div>
+      <div class="jirocho">
+        <div class="jiro1"><img src="images/window.png"></div>
+        <div class="jiro2"><p>国登録文化財・次郎長生家の隣にある静岡市の税理士事務所です。<br>どんな些細なことでも気軽にお問合せください</p></div>
+        <div class="jiro3"><img src="images/fuki.png"></div>
+        <div class="jiro4"><img src="images/plant.png"></div>
+      </div>
+    </div><!-- /.toppage -->
+
+    <!-- TODO: footerの下に余白ができているのを消したい -->
+    <footer id="footer">
+      <div class="moko2"><img src="images/green4.svg"></div>
+      <!-- TODO: footerもくもくの下に余白あり -->
+      <div class="green">
+        <div class="footer-top">
+          <div class="share">
+            <div class="s1"><p>Contact</p></div>
+            <div class="s2"><p>▷</p></div>
+            <div class="s3"><a href="tel:054-355-5107"><span>054-355-5107</span></a></div>
+            <div class="s4"><p>Follow me</p></div>
+            <div class="s5"><p>▷</p></div>
+            <div class="s6"><a href="#"><img src="images/instagram.svg"></a><a href="#"><img src="images/line2.png"></a></div>
+            <div class="s7"><p>Share</p></div>
+            <div class="s8"><p>▷</p></div>
+            <div class="s9"><a href="#"><img src="images/twitter.svg"></a><a href="#"><img src="images/facebook.png"></a></div>
+          </div><!-- /.share-->
+          <div class="jigyo">
+            <img src="images/kusa.svg">
+            <p>
+              <span>事業内容</span><br>
+              経理処理サポート<br>
+              各種税金申告業務<br>
+              補助金申請作業補助<br>
+              事業計画作成等(各種相談)<br>
+            </p>
+            <img src="images/kusa.svg">
+          </div><!-- /.jigyo-->
+        </div><!-- /.footer-top-->
+        
+        <div class="footer-bottom">
+          <div class="map">
+            <img src="images/map.svg">
+            <p>〒424-0945 静岡県静岡市清水区美濃輪町４−１５−２</p>
+          </div><!-- /.map-->
+          <div class="kanban"><img src="images/kanban.svg"></div>
+        </div><!-- /.footer-bottom-->
+        
+        <div class="copy"><p>Copyright<small>&copy;</small>Hamada Takayuki Tax Accountant Office. All Rights Reserved.</p></div>
+      
+      </div><!-- /.green-->
+    
+    </footer>
+
 			
 	</body>
 

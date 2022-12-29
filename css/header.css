@@ -1,74 +1,62 @@
 
-.green{
+.header{
 	background-color:#557968;
 	display:flex;
-	justify-content:space-between;
+	justify-content: center;
 }
-
-/* --- 以下ヘッダーが途中で変わる処理（使う時にJavaScriptと一緒にコメントアウト外す） */
-/* HeightMinというクラス名がついたら最前面に出して上部固定に*/
-/* #header.HeightMin{
-	position: fixed;
-    z-index: 999;
-	animation: DownAnime 0.5s forwards;
-} */
-
-/* @keyframes DownAnime{
-	from {
-		opacity: 0;
-	  transform: translateY(-170px);
-	}
-	to {
-		opacity: 1;
-	  transform: translateY(0);
-	}
-  } */
-  
-/* --- 以下ヘッダーが途中で変わる処理ここまで */
-
 
 /*navigation*/
 .nav{
-	border-left: 3px solid #f0edea;
-	margin-left: 80px;
+	border-left: 4px solid #f0edea;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 .nav-bean {
-	width:15px;
-	margin-right:15px;
+	width: 15px;
+	margin-right: 10px;
 }
 
+.nav ul {
+	list-style-position: inside;
+	list-style-image: url("images/shiromame.png");
+}
 
 .main-nav{
-	font-size:1.2rem;
+	font-size:1.3rem;
 	margin:0 0 0 10px;
 	list-style:none;
-	width:300px;
-	line-height:3.2rem;
-	padding:2.5rem 0 2rem ;
+	width: 100%;
+	line-height:3rem;
+	padding-top: 2.5rem;
 }
 .main-nav a{
 	color:#f0edea;
-	letter-spacing:0.4rem;
+	letter-spacing:0.2rem;
 }
 .main-nav img{
 	margin-left:25px;
 }
 
-@media (max-width: 970px) {
-	/* .nav {
-		display: none;
-	}
-	.main-nav {
-		display: none;
-	}
-	.nav-bean{
-		display: none;
-	} */
+/*logo*/
+.logos{
+	justify-content: center;
+    display: block;
+	margin: 15px auto;
+}
+.logo{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin:10px auto 20px;
 }
 
 
-/* タブレットサイズ */
-@media (max-width: 800px) {
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 768px) {
 	.nav {
         border-left: unset;
 		display: none;
@@ -89,59 +77,48 @@
     }
 }
 
-
-/* --- 以下スマホサイズの時に横に追従するメニュー（css調整終わってない） */
-#side {
-	position: sticky;
-	top: 20px;
-	width: 150px; /* サイドメニューの幅 */
-	right: 0;
-	top: 0;
+@media (max-width: 970px) {
+	/* .nav {
+		display: none;
+	}
+	.main-nav {
+		display: none;
+	}
+	.nav-bean{
+		display: none;
+	} */
 }
-.side {
-	box-sizing: border-box;
 
-	position: absolute;
-	width: 210px;
-	height: 444px;
-	left: 1243px;
-	top: 302px;
-
-	background: #F0EDEA;
-	border: 8px solid #D1C9C0;
-	border-radius: 22px;
+/* タブレットサイズ */
+@media (max-width: 800px) {
+	
 }
-.menu {
-	box-sizing: border-box;
 
-	position: absolute;
-	width: 97px;
-	height: 97px;
-	left: 1300px;
-	top: 596px;
-
-	border: 6px solid #557968;
+/* タブレットサイズ */
+@media (max-width: 400px) {
+	/* .nav {
+        border-left: unset;
+		display: none;
+	}
+	.main-nav {
+		display: none;
+	}
+	.nav-bean {
+		display: none;
+	}
+    .green {
+        background-color:#557968;
+        display: block;
+    }
+    .logos{
+        margin-right: 0;
+        text-align:center;
+    } */
 }
-/* --- スマホサイズの時に横に追従するメニューここまで */
 
-
-#home {
+.home {
 	position: relative;
 }
-
-/*logo*/
-.logos{
-	justify-content: center;
-	margin-right: 3%;
-    display: block;
-}
-.logo{
-	justify-content: center;
-	width:520px;
-	margin:50px auto;
-	text-align:center;
-}
-
 
 .inquiries {
     display:block;
@@ -180,4 +157,58 @@
 	height:70px;
 }
 
+/* --- 以下スマホサイズの時に横に追従するメニュー（css調整終わってない） */
+#side {
+	position: sticky;
+	top: 20px;
+	width: 150px; /* サイドメニューの幅 */
+	right: 0;
+	top: 0;
+}
+.side {
+	box-sizing: border-box;
 
+	position: absolute;
+	width: 210px;
+	height: 444px;
+	left: 1243px;
+	top: 302px;
+
+	background: #F0EDEA;
+	border: 8px solid #D1C9C0;
+	border-radius: 22px;
+}
+.menu {
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 97px;
+	height: 97px;
+	left: 1300px;
+	top: 596px;
+
+	border: 6px solid #557968;
+}
+/* --- スマホサイズの時に横に追従するメニューここまで */
+
+
+/* --- 以下ヘッダーが途中で変わる処理（使う時にJavaScriptと一緒にコメントアウト外す） */
+/* HeightMinというクラス名がついたら最前面に出して上部固定に*/
+/* #header.HeightMin{
+	position: fixed;
+    z-index: 999;
+	animation: DownAnime 0.5s forwards;
+} */
+
+/* @keyframes DownAnime{
+	from {
+		opacity: 0;
+	  transform: translateY(-170px);
+	}
+	to {
+		opacity: 1;
+	  transform: translateY(0);
+	}
+  } */
+  
+/* --- 以下ヘッダーが途中で変わる処理ここまで */
