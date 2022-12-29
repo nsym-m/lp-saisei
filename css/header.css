@@ -16,11 +16,6 @@
 	margin-right: 10px;
 }
 
-.nav ul {
-	list-style-position: inside;
-	list-style-image: url("images/shiromame.png");
-}
-
 .main-nav{
 	font-size:1.3rem;
 	margin:0 0 0 10px;
@@ -37,6 +32,7 @@
 	margin-left:25px;
 }
 
+
 /*logo*/
 .logos{
 	justify-content: center;
@@ -51,12 +47,134 @@
 	margin:10px auto 20px;
 }
 
-
-@media screen and (max-width: 375px) {
-
+/* ラインメールの問い合わせ先ボタン */
+.inquiries {
+    display:block;
+    white-space:nowrap;
+}
+.button{
+	font-size:0.9rem;
+	font-weight:100;
+	letter-spacing:0.25rem;
+	vertical-align:center;
+	color:#f0edea;
+	border:3px solid #f0edea;
+	border-radius: 100px;
+	padding:18px 15px;
+	margin: 0px 8px;
+}
+.button:hover{
+	color:#FFFFFF;
+	background:#4f6f5f;
+}
+.button img{
+	height:28px;
+	padding-right:20px;
+	vertical-align:top;
 }
 
-@media screen and (max-width: 768px) {
+/*mokomoko*/
+.moko{
+	height:70px;
+	width:100vw;
+	background-image: url("../images/green3.svg");
+	background-repeat:repeat-x;
+}
+.moko img{
+	height:70px;
+}
+
+@media (max-width: 850px) {
+	.main-nav{
+		font-size:1rem;
+		line-height:2.8rem;
+	}
+	.main-nav a{
+		letter-spacing:0.15rem;
+	}
+	.main-nav img{
+		margin-left:22px;
+	}
+}
+
+/* タブレットサイズ */
+@media (max-width: 800px) {
+	/* 中央ロゴ */
+    .logos{
+        justify-content: center;
+		display: block;
+		margin: 10px auto;
+    }
+	.logo{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		margin: 10px auto 20px;
+	}
+
+	/* 問い合わせ先 */
+	.button{
+		font-size: 0.8rem;
+		font-weight: 100;
+		letter-spacing: 0.25rem;
+		vertical-align: center;
+		color: #f0edea;
+		border: 2px solid #f0edea;
+		border-radius: 80px;
+		padding:14px 11px;
+		margin: 0px 8px;
+	}
+	.button:hover{
+		color:#FFFFFF;
+		background:#4f6f5f;
+	}
+	.button img{
+		height:24px;
+		padding-right:20px;
+		vertical-align:top;
+	}
+}
+
+@media (max-width: 750px) {
+	/* 左メニュー */
+	.nav {
+        border-left: unset;
+		display: none;
+	}
+	.main-nav {
+		display: none;
+	}
+	.nav-bean {
+		display: none;
+	}
+    .green {
+        background-color:#557968;
+        display: block;
+    }
+}
+
+
+
+
+@media screen and (max-width: 400px), (max-device-width: 400px) {
+	.nav {
+        border-left: unset;
+		display: none;
+	}
+	.main-nav {
+		display: none;
+	}
+	.nav-bean {
+		display: none;
+	}
+    .green {
+        background-color:#557968;
+        display: block;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
 	.nav {
         border-left: unset;
 		display: none;
@@ -75,7 +193,7 @@
         margin-right: 0;
         text-align:center;
     }
-}
+} */
 
 @media (max-width: 970px) {
 	/* .nav {
@@ -116,52 +234,13 @@
     } */
 }
 
-.home {
-	position: relative;
-}
 
-.inquiries {
-    display:block;
-    white-space:nowrap;
-}
-/*button*/
-.button{
-	font-size:0.9rem;
-	font-weight:100;
-	letter-spacing:0.25rem;
-	vertical-align:center;
-	color:#f0edea;
-	border:3px solid #f0edea;
-	border-radius: 100px;
-	padding:18px 15px;
-	margin: 0px 8px;
-}
-.button:hover{
-	color:#FFFFFF;
-	background:#4f6f5f;
-}
-.button img{
-	height:28px;
-	padding-right:20px;
-	vertical-align:top;
-}
-
-/*mokomoko*/
-.moko{
-	height:70px;
-	width:100vw;
-	background-image: url("../images/green3.svg");
-	background-repeat:repeat-x;
-}
-.moko img{
-	height:70px;
-}
 
 /* --- 以下スマホサイズの時に横に追従するメニュー（css調整終わってない） */
-#side {
+/* #side {
 	position: sticky;
 	top: 20px;
-	width: 150px; /* サイドメニューの幅 */
+	width: 150px;
 	right: 0;
 	top: 0;
 }
@@ -188,7 +267,7 @@
 	top: 596px;
 
 	border: 6px solid #557968;
-}
+} */
 /* --- スマホサイズの時に横に追従するメニューここまで */
 
 
