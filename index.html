@@ -67,31 +67,37 @@
                 <img src="images/mail.svg" alt="a">
                 <span>メールでお問合わせ</span>
               </a> 
-                </a> 
-              </a> 
             </div>
           </div>
         </div><!-- /.pc logos -->
 
-        </div><!-- /.sp_top -->
-        <div class="moko"></div>
+        <!-- TODO: ハンバーガーメニューを右端に置く、ボタン押した時に画面全体に表示させる
+          <nav class="header__nav" id="js-nav">
+          <ul class="nav__items nav-items">
+            <li class="nav-items__item"><img class="nav-bean" src="images/shiromame.png"><a href="#touen">私たちについて</a></li>
+            <li class="nav-items__item"><img class="nav-bean" src="images/shiromame.png"><a href="#daily">相談チャート</a></li>
+            <li class="nav-items__item"><img class="nav-bean" src="images/shiromame.png"><a href="#tokubetsu">できること</a></li>
+            <li class="nav-items__item"><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">料金表</a></li>
+            <li class="nav-items__item"><img class="nav-bean" src="images/shiromame.png"><a href="#nenkan">アクセス</a></li>
+          </ul>
+        </nav>
 
-			</div><!-- /.green  -->
+        <button class="header__hamburger hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button> -->
+
+      </div><!-- /.sp_top -->
+
+      <div class="moko"></div>
 
 		</header><!-- /.page-header .wrapper  -->
 
-
-      <!-- TODO: 以下スマホサイズの時に横に追従するメニュー（css調整終わってない） -->
-    <div class="side-menu">
-      <div class="side-menu-icon">MENU</div>
-      <div class="side-menu-icon">LINE</div>
-      <div class="side-menu-icon">MAIL</div>
-      <div class="side-menu-icon">CHART</div>
-    </div>
-      <!-- スマホサイズの時に横に追従するメニューここまで -->
     <img class="tori" src="images/tori.svg">
+
     <div class="toppage">
-      
+
       <div class="home-content">
         
         <h2 class="page-title"><img src="images/logo-midori.svg" alt="濱田貴之税理士事務所"></h2>
@@ -206,62 +212,5 @@
 
 	</body>
 
-  <script>
-
-    // --- 以下ハンバーガーメニューの開け閉め
-    const ham=$('#js-hamburger');
-    const nav=$('#js-nav');
-    ham.on('click',function(){
-      ham.toggleClass('active');
-      nav.toggleClass('active');
-    });
-
-
-    // --- 以下ヘッダーが途中で変わる処理（使う時にcssと一緒にコメントアウト外す。調整は必要）
-    // 参考サイト：https://takblog.site/web/?p=1453
-
-    // const headerH = $("#header").outerHeight(true);//headerの高さを取得    
-
-    // //スクロール途中からヘッダーの高さを変化させるための設定を関数でまとめる
-    // function FixedAnime() {
-    //   //ヘッダーの高さを取得
-    //   const scroll = $(window).scrollTop();
-    //   if (scroll >= headerH){//ヘッダーの高さを超えたら
-    //     $('#header').addClass('HeightMin');//#headerについているHeightMinというクラス名を付与
-    //   } else {
-    //     $('#header').removeClass('HeightMin');//HeightMinというクラス名を除去
-    //   }    
-    // }
-
-    // // 画面をスクロールをしたら動かしたい場合の記述
-    // $(window).scroll(function () {
-    //   FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
-    // });
-
-    // // ページが読み込まれたらすぐに動かしたい場合の記述
-    // $(window).on('load', function () {
-    //   FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
-    // });
-
-    // //リンク先のidまでスムーススクロール
-    // //※ページ内リンクを行わない場合は不必要なので削除してください
-    // $('#g-navi li a').click(function () {
-    //   const headerVal = $("#header").outerHeight(true);	//現在のheaderの高さを取得    
-
-    //   //ヘッダーが高さの状態を取得してスクロールする範囲を調整する
-    //   const scroll = $(window).scrollTop();	//スクロール
-    //   const adjust = 0						//調整の変数
-    //   if(scroll <= headerVal ){			//スクロールとヘッダーの高さを取得
-    //     adjust = 70;					//スクロール値がヘッダーの高さ以内であれば調整変数に70を入れる
-    //   }
-      
-    //   const elmHash = $(this).attr('href'); //hrefを取得
-    //   const pos = $(elmHash).offset().top-headerVal-adjust;	//クリックしたheader分の高さと調整分を引いた高さまでスクロール
-      
-    //   $('body,html').animate({scrollTop: pos}, 1000);
-    //   return false;
-    // });
-
-    // --- ヘッダーが途中で変わる処理ここまで
-  </script>
+  <script src="js/index.js"></script>
 </html>
